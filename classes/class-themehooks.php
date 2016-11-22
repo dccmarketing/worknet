@@ -153,7 +153,7 @@ class Worknet_Themehooks {
 					$args['after'] 			= '</span>';
 					$args['before'] 		= '<span rel="v:child" typeof="v:Breadcrumb">';
 					$args['delimiter'] 		= '&nbsp;>&nbsp;';
-					$args['home'] 			= esc_html_x( 'Home', 'breadcrumb', 'rosh' );
+					$args['home'] 			= esc_html_x( 'Home', 'breadcrumb', 'worknet' );
 					$args['wrap_after'] 	= '</span></span></nav>';
 					$args['wrap_before'] 	= '<nav class="woocommerce-breadcrumb" ' . ( is_single() ? 'itemprop="breadcrumb"' : '' ) . '><span xmlns:v="http://rdf.data-vocabulary.org/#"><span typeof="v:Breadcrumb">';
 
@@ -224,10 +224,10 @@ class Worknet_Themehooks {
 		if ( 'post' !== get_post_type() ) { return; }
 
 		/* translators: used between list items, there is a space after the comma */
-		$categories_list = get_the_category_list( esc_html__( ', ', 'rosh' ) );
+		$categories_list = get_the_category_list( esc_html__( ', ', 'worknet' ) );
 		if ( $categories_list && worknet_categorized_blog() ) {
 
-			printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'rosh' ) . '</span>', $categories_list );  // WPCS: XSS OK.
+			printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'worknet' ) . '</span>', $categories_list );  // WPCS: XSS OK.
 
 		}
 
@@ -269,7 +269,7 @@ class Worknet_Themehooks {
 		if ( is_page() ) { return; }
 		if ( 'post' !== get_post_type() ) { return; }
 
-		edit_post_link( esc_html__( 'Edit', 'rosh' ), '<span class="edit-link">', '</span>' );
+		edit_post_link( esc_html__( 'Edit', 'worknet' ), '<span class="edit-link">', '</span>' );
 
 	} // entry_edit_link()
 
@@ -287,11 +287,11 @@ class Worknet_Themehooks {
 		if ( 'post' !== get_post_type() ) { return; }
 
 		/* translators: used between list items, there is a space after the comma */
-		$tags_list = get_the_tag_list( '', esc_html__( ', ', 'rosh' ) );
+		$tags_list = get_the_tag_list( '', esc_html__( ', ', 'worknet' ) );
 
 		if ( empty( $tags_list ) ) { return; }
 
-		printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'rosh' ) . '</span>', $tags_list );  // WPCS: XSS OK.
+		printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'worknet' ) . '</span>', $tags_list );  // WPCS: XSS OK.
 
 	} // entry_tags_links()
 
@@ -304,8 +304,8 @@ class Worknet_Themehooks {
 	public function footer_content() {
 
 		?><div class="site-info">
-			<div class="copyright">&copy <?php echo date( 'Y' ); ?> <a href="<?php echo esc_url( get_admin_url(), 'rosh' ); ?>"><?php echo get_bloginfo( 'name' ); ?></a></div>
-			<div class="credits"><?php printf( esc_html__( 'Site created by %1$s', 'rosh' ), '<a href="https://dccmarketing.com/" rel="nofollow noopener" target="_blank">DCC</a>' ); ?></div>
+			<div class="copyright">&copy <?php echo date( 'Y' ); ?> <a href="<?php echo esc_url( get_admin_url(), 'worknet' ); ?>"><?php echo get_bloginfo( 'name' ); ?></a></div>
+			<div class="credits"><?php printf( esc_html__( 'Site created by %1$s', 'worknet' ), '<a href="https://dccmarketing.com/" rel="nofollow noopener" target="_blank">DCC</a>' ); ?></div>
 		</div><!-- .site-info --><?php
 
 	} // footer_content()
@@ -346,7 +346,7 @@ class Worknet_Themehooks {
 		if ( ! is_404() ) { return; }
 
 		/* translators: %1$s: smiley */
-		$archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'rosh' ), convert_smilies( ':)' ) ) . '</p>';
+		$archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'worknet' ), convert_smilies( ':)' ) ) . '</p>';
 
 		the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
 
@@ -365,7 +365,7 @@ class Worknet_Themehooks {
 		if ( ! worknet_categorized_blog() ) { return; }
 
 		?><div class="widget widget_categories">
-			<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'rosh' ); ?></h2>
+			<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'worknet' ); ?></h2>
 			<ul><?php
 
 				wp_list_categories( array(
@@ -392,7 +392,7 @@ class Worknet_Themehooks {
 
 		if ( ! is_404() ) { return; }
 
-		?><p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'rosh' ); ?></p><?php
+		?><p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'worknet' ); ?></p><?php
 
 	} // four_04_message()
 
@@ -474,7 +474,7 @@ class Worknet_Themehooks {
 	public function menu_primary() {
 
 		?><nav id="site-navigation" class="nav-primary" role="navigation">
-			<button class="menu-primary-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'rosh' ); ?></button><?php
+			<button class="menu-primary-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'worknet' ); ?></button><?php
 
 				$menu_args['menu_id'] 			= 'primary-menu';
 				$menu_args['container'] 		= false;
@@ -540,12 +540,12 @@ class Worknet_Themehooks {
 			);
 
 			$posted_on = sprintf(
-				esc_html_x( 'Posted on %s', 'post date', 'rosh' ),
+				esc_html_x( 'Posted on %s', 'post date', 'worknet' ),
 				'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 			);
 
 			$byline = sprintf(
-				esc_html_x( 'by %s', 'post author', 'rosh' ),
+				esc_html_x( 'by %s', 'post author', 'worknet' ),
 				'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 			);
 
@@ -635,7 +635,7 @@ class Worknet_Themehooks {
 	 */
 	public function skip_link() {
 
-		?><a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'rosh' ); ?></a><?php
+		?><a class="skip-link screen-reader-text" href="#main"><?php esc_html_e( 'Skip to content', 'worknet' ); ?></a><?php
 
 	} // skip_link()
 
@@ -652,7 +652,7 @@ class Worknet_Themehooks {
 
 		?><h1 class="page-title"><?php
 
-			esc_html_e( 'Oops! That page can&rsquo;t be found.', 'rosh' );
+			esc_html_e( 'Oops! That page can&rsquo;t be found.', 'worknet' );
 
 		?></h1><?php
 
@@ -735,7 +735,7 @@ class Worknet_Themehooks {
 		?><header class="page-header">
 			<h1 class="page-title"><?php
 
-				printf( esc_html__( 'Search Results for: %s', 'rosh' ), '<span>' . get_search_query() . '</span>' );
+				printf( esc_html__( 'Search Results for: %s', 'worknet' ), '<span>' . get_search_query() . '</span>' );
 
 			?></h1>
 		</header><!-- .page-header --><?php

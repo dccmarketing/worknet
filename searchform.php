@@ -14,7 +14,7 @@
 	?>" method="get" role="search" >
 	<label class="screen-reader-text" for="site-search"><?php
 
-		echo apply_filters( 'worknet_search_form_label', _x( 'Search for:', 'label', 'rosh' ) );
+		echo apply_filters( 'worknet_search_form_label', _x( 'Search for:', 'label', 'worknet' ) );
 
 	?></label>
 	<input class="<?php
@@ -23,11 +23,11 @@
 
 		?>" id="site-search" name="s" placeholder="<?php
 
-		echo apply_filters( 'worknet_search_form_placeholder', esc_attr_x( 'Search &hellip;', 'placeholder', 'rosh' ) );
+		echo apply_filters( 'worknet_search_form_placeholder', esc_attr_x( 'Search &hellip;', 'placeholder', 'worknet' ) );
 
 	?>" title="<?php
 
-		echo apply_filters( 'worknet_search_form_label', esc_attr_x( 'Search for:', 'label', 'rosh' ) );
+		echo apply_filters( 'worknet_search_form_label', esc_attr_x( 'Search for:', 'label', 'worknet' ) );
 
 	?>" type="search" value="<?php
 
@@ -41,7 +41,7 @@
 		?>">
 		<span class="screen-reader-text"><?php
 
-			echo apply_filters( 'worknet_search_form_button_text', esc_attr_x( 'Search', 'submit button', 'rosh' ) );
+			echo apply_filters( 'worknet_search_form_button_text', esc_attr_x( 'Search', 'submit button', 'worknet' ) );
 
 		?></span>
 		<span class="search-icon"><?php worknet_the_svg( 'search', 'hidden-search-icon' ); ?></span>

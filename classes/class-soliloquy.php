@@ -25,7 +25,7 @@ class Worknet_Soliloquy {
 	 */
 	public function add_notes() {
 
-		echo '<p class="admin-notes update-nag">' . esc_html__( 'NOTE: Slides for the homepage need to be 1500px wide and 500px tall.', 'rosh' ) . '</p>';
+		echo '<p class="admin-notes update-nag">' . esc_html__( 'NOTE: Slides for the homepage need to be 1500px wide and 500px tall.', 'worknet' ) . '</p>';
 
 	} // add_notes()
 

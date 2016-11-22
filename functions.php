@@ -11,7 +11,7 @@
 /**
  * Set the constants used throughout.
  */
-define( 'PARENT_THEME_SLUG', 'rosh' );
+define( 'PARENT_THEME_SLUG', 'worknet' );
 define( 'PARENT_THEME_VERSION', '1.0.2' );
 
 /**

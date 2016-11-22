@@ -51,8 +51,8 @@ class Worknet_Utilities {
 	 */
 	public function add_mime_types( $post_mime_types ) {
 
-		$post_mime_types['application/pdf'] = array( esc_html__( 'PDFs', 'rosh' ), esc_html__( 'Manage PDFs', 'rosh' ), _n_noop( 'PDF <span class="count">(%s)</span>', 'PDFs <span class="count">(%s)</span>' ) );
-		$post_mime_types['text/x-vcard'] 	= array( esc_html__( 'vCards', 'rosh' ), esc_html__( 'Manage vCards', 'rosh' ), _n_noop( 'vCard <span class="count">(%s)</span>', 'vCards <span class="count">(%s)</span>' ) );
+		$post_mime_types['application/pdf'] = array( esc_html__( 'PDFs', 'worknet' ), esc_html__( 'Manage PDFs', 'worknet' ), _n_noop( 'PDF <span class="count">(%s)</span>', 'PDFs <span class="count">(%s)</span>' ) );
+		$post_mime_types['text/x-vcard'] 	= array( esc_html__( 'vCards', 'worknet' ), esc_html__( 'Manage vCards', 'worknet' ), _n_noop( 'vCard <span class="count">(%s)</span>', 'vCards <span class="count">(%s)</span>' ) );
 
 		return $post_mime_types;
 
@@ -187,9 +187,9 @@ class Worknet_Utilities {
 		global $post;
 
 		$return = sprintf( '... <a class="moretag read-more" href="%s">', esc_url( get_permalink( $post->ID ) ) );
-		$return .= esc_html__( 'Read more', 'rosh' );
+		$return .= esc_html__( 'Read more', 'worknet' );
 		$return .= '<span class="screen-reader-text">';
-		$return .= sprintf( esc_html__( ' about %s', 'rosh' ), $post->post_title );
+		$return .= sprintf( esc_html__( ' about %s', 'worknet' ), $post->post_title );
 		$return .= '</span></a>';
 
 		return $return;
@@ -315,7 +315,7 @@ class Worknet_Utilities {
 
 		} else {
 
-			echo '<span class="name-template">' . esc_html( 'Default', 'rosh' ) . '</span>';
+			echo '<span class="name-template">' . esc_html( 'Default', 'worknet' ) . '</span>';
 
 		}
 
@@ -330,7 +330,7 @@ class Worknet_Utilities {
 	 */
 	public function page_template_column_head( $defaults ) {
 
-		$defaults['page_template'] = esc_html( 'Page Template', 'rosh' );
+		$defaults['page_template'] = esc_html( 'Page Template', 'worknet' );
 
  		return $defaults;
 

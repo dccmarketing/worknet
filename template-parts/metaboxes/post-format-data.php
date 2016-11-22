@@ -13,7 +13,7 @@ $format = get_post_format();
 
 $atts['id'] 			= 'post-audio';
 $atts['name'] 			= 'post-audio';
-$props['label'] 		= __( 'Post Audio URL', 'rosh' );
+$props['label'] 		= __( 'Post Audio URL', 'worknet' );
 
 if ( ! empty( $this->meta[$atts['id']][0] ) ) {
 
@@ -44,7 +44,7 @@ unset( $field );
 
 $atts['id'] 			= 'post-image';
 $atts['name'] 			= 'post-image';
-$props['label'] 		= __( 'Post Image URL', 'rosh' );
+$props['label'] 		= __( 'Post Image URL', 'worknet' );
 
 if ( ! empty( $this->meta[$atts['id']][0] ) ) {
 
@@ -75,7 +75,7 @@ unset( $field );
 
 $atts['id'] 			= 'post-link';
 $atts['name'] 			= 'post-link';
-$props['label'] 		= __( 'Post Link URL', 'rosh' );
+$props['label'] 		= __( 'Post Link URL', 'worknet' );
 
 if ( ! empty( $this->meta[$atts['id']][0] ) ) {
 
@@ -106,7 +106,7 @@ unset( $field );
 
 $atts['id'] 			= 'post-video';
 $atts['name'] 			= 'post-video';
-$props['label'] 		= __( 'Post Video URL', 'rosh' );
+$props['label'] 		= __( 'Post Video URL', 'worknet' );
 
 if ( ! empty( $this->meta[$atts['id']][0] ) ) {
 

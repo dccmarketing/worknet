@@ -36,7 +36,7 @@
 		the_content();
 
 		wp_link_pages( array(
-			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'rosh' ),
+			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'worknet' ),
 			'after'  => '</div>',
 		) );
 

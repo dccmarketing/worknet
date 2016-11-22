@@ -394,7 +394,7 @@ class Worknet_Metabox {
 
 		$defaults['context'] 	= 'normal';
 		$defaults['id'] 		= '';
-		$defaults['name'] 		= __( 'Metabox', 'rosh' );
+		$defaults['name'] 		= __( 'Metabox', 'worknet' );
 		$defaults['priority'] 	= 'default';
 		$defaults['screen'] 	= 'page';
 		$defaults['file'] 		= $defaults['id'];

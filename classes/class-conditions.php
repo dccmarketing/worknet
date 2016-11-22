@@ -29,37 +29,37 @@ class Worknet_Conditions {
 
 		if ( empty( $type ) ) {
 
-			$check_type = new WP_Error( 'type_empty', __( 'The type for the metabox is empty.', 'rosh' ) );
+			$check_type = new WP_Error( 'type_empty', __( 'The type for the metabox is empty.', 'worknet' ) );
 
 		}
 
 		if ( is_wp_error( $check_type ) ) {
 
-			wp_die( $check_type->get_error_message(), __( 'Type is empty.', 'rosh' ) );
+			wp_die( $check_type->get_error_message(), __( 'Type is empty.', 'worknet' ) );
 
 		}
 
 		if ( empty( $condition ) ) {
 
-			$check_condition = new WP_Error( 'condition_empty', __( 'The condition for the metabox is empty.', 'rosh' ) );
+			$check_condition = new WP_Error( 'condition_empty', __( 'The condition for the metabox is empty.', 'worknet' ) );
 
 		}
 
 		if ( is_wp_error( $check_condition ) ) {
 
-			wp_die( $check_condition->get_error_message(), __( 'Condition is empty.', 'rosh' ) );
+			wp_die( $check_condition->get_error_message(), __( 'Condition is empty.', 'worknet' ) );
 
 		}
 
 		if ( empty( $post_obj ) ) {
 
-			$check_post_obj = new WP_Error( 'post_object_empty', __( 'The post object for the metabox is empty.', 'rosh' ) );
+			$check_post_obj = new WP_Error( 'post_object_empty', __( 'The post object for the metabox is empty.', 'worknet' ) );
 
 		}
 
 		if ( is_wp_error( $check_post_obj ) ) {
 
-			wp_die( $check_post_obj->get_error_message(), __( 'Post object is empty.', 'rosh' ) );
+			wp_die( $check_post_obj->get_error_message(), __( 'Post object is empty.', 'worknet' ) );
 
 		}
 

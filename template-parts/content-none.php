@@ -15,7 +15,7 @@
 	do_action( 'worknet_entry_top' );
 
 	?><header class="page-header contentnone">
-		<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'rosh' ); ?></h1>
+		<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'worknet' ); ?></h1>
 	</header><!-- .page-header --><?php
 
 	/**
@@ -29,7 +29,7 @@
 
 			?><p><?php
 
-				printf( wp_kses( __( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'rosh' ), array( 'a' => array( 'href' => array() ) ) ), esc_url( admin_url( 'post-new.php' ) ) );
+				printf( wp_kses( __( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'worknet' ), array( 'a' => array( 'href' => array() ) ) ), esc_url( admin_url( 'post-new.php' ) ) );
 
 			?></p><?php
 
@@ -37,7 +37,7 @@
 
 			?><p><?php
 
-				esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'rosh' );
+				esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'worknet' );
 
 			?></p><?php
 
@@ -47,7 +47,7 @@
 
 			?><p><?php
 
-				esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'rosh' );
+				esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'worknet' );
 
 			?></p><?php
 

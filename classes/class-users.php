@@ -34,12 +34,12 @@ class Worknet_Users {
 	 */
 	public function add_contact_methods( $contactmethods ) {
 
-		$contactmethods['linkedin'] 	= __( 'LinkedIn' , 'rosh' );
-		$contactmethods['youtube'] 		= __( 'YouTube' , 'rosh' );
-		$contactmethods['vimeo'] 		= __( 'Vimeo' , 'rosh' );
-		$contactmethods['wordpress'] 	= __( 'WordPress' , 'rosh' );
-		$contactmethods['pinterest'] 	= __( 'Pinterest' , 'rosh' );
-		$contactmethods['instagram'] 	= __( 'Instagram' , 'rosh' );
+		$contactmethods['linkedin'] 	= __( 'LinkedIn' , 'worknet' );
+		$contactmethods['youtube'] 		= __( 'YouTube' , 'worknet' );
+		$contactmethods['vimeo'] 		= __( 'Vimeo' , 'worknet' );
+		$contactmethods['wordpress'] 	= __( 'WordPress' , 'worknet' );
+		$contactmethods['pinterest'] 	= __( 'Pinterest' , 'worknet' );
+		$contactmethods['instagram'] 	= __( 'Instagram' , 'worknet' );
 
 		return $contactmethods;
 

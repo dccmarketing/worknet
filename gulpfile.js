@@ -27,7 +27,7 @@
 var project = {
 	'url': 'rosh.dev',
 	'i18n': {
-		'domain': 'rosh',
+		'domain': 'worknet',
 		'destFile': 'rosh.pot',
 		'package': 'Rosh',
 		'bugReport': 'http://www.dccmarketing.com/contact',

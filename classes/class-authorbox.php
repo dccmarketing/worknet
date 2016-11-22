@@ -99,15 +99,15 @@ class Worknet_Authorbox {
 	 */
 	protected function get_socials_list() {
 
-		$socials['facebook'] 	= __( 'Facebook', 'rosh' );
-		$socials['twitter'] 	= __( 'Twitter', 'rosh' );
-		$socials['googleplus'] 	= __( 'Google Plus', 'rosh' );
-		$socials['linkedin'] 	= __( 'LinkedIn', 'rosh' );
-		$socials['youtube'] 	= __( 'YouTube', 'rosh' );
-		$socials['videmo'] 		= __( 'Vimeo', 'rosh' );
-		$socials['wordpress'] 	= __( 'WordPress', 'rosh' );
-		$socials['pinterest'] 	= __( 'Pinterest', 'rosh' );
-		$socials['instagram'] 	= __( 'Instagram', 'rosh' );
+		$socials['facebook'] 	= __( 'Facebook', 'worknet' );
+		$socials['twitter'] 	= __( 'Twitter', 'worknet' );
+		$socials['googleplus'] 	= __( 'Google Plus', 'worknet' );
+		$socials['linkedin'] 	= __( 'LinkedIn', 'worknet' );
+		$socials['youtube'] 	= __( 'YouTube', 'worknet' );
+		$socials['videmo'] 		= __( 'Vimeo', 'worknet' );
+		$socials['wordpress'] 	= __( 'WordPress', 'worknet' );
+		$socials['pinterest'] 	= __( 'Pinterest', 'worknet' );
+		$socials['instagram'] 	= __( 'Instagram', 'worknet' );
 
 		/**
 		 * The worknet_authorbox_socials filter.
@@ -167,7 +167,7 @@ class Worknet_Authorbox {
 				 * The worknet_authorbox_moreposts_text filter.
 				 * @var 		string 			The "more posts by" text for the authorbox.
 				 */
-				apply_filters( 'worknet_authorbox_moreposts_text', __( 'More posts by %s', 'rosh' ) ),
+				apply_filters( 'worknet_authorbox_moreposts_text', __( 'More posts by %s', 'worknet' ) ),
 				$authordata->user_nicename
 			);
 
@@ -196,7 +196,7 @@ class Worknet_Authorbox {
 
 				worknet_the_svg( $key );
 
-				echo esc_html( $social, 'rosh' );
+				echo esc_html( $social, 'worknet' );
 
 			?></a>
 		</li><?php

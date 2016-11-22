@@ -25,7 +25,7 @@ class Worknet_Metabox_Simple_Repeater {
 		$subfields[] 		= array( 'simple-peat-text', 'text', '' );
 		$fields[] 			= array( 'simple-repeater', 'repeater', $subfields );
 		$props['id'] 		= 'simple-repeater';
-		$props['name'] 		= __( 'Simple Repeater', 'rosh' );
+		$props['name'] 		= __( 'Simple Repeater', 'worknet' );
 
 		$this->metabox 		= new Worknet_Metabox( $props, $nonce, $fields );
 

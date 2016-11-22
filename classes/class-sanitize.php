@@ -30,13 +30,13 @@ class Worknet_Sanitize {
 
 		if ( empty( $type ) ) {
 
-			$check = new WP_Error( 'forgot_type', __( 'Specify the data type to sanitize.', 'rosh' ) );
+			$check = new WP_Error( 'forgot_type', __( 'Specify the data type to sanitize.', 'worknet' ) );
 
 		}
 
 		if ( is_wp_error( $check ) ) {
 
-			wp_die( $check->get_error_message(), __( 'Forgot data type', 'rosh' ) );
+			wp_die( $check->get_error_message(), __( 'Forgot data type', 'worknet' ) );
 
 		}
 

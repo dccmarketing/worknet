@@ -26,7 +26,7 @@ class Worknet_Metabox_Subtitle {
 		$props['context'] 	= 'top';
 		$props['file'] 		= 'subtitle';
 		$props['id'] 		= 'subtitle';
-		$props['name'] 		= __( 'Subtitle', 'rosh' );
+		$props['name'] 		= __( 'Subtitle', 'worknet' );
 
 		$this->metabox 		= new Worknet_Metabox( $props, $nonce, $fields );
 

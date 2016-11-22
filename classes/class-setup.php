@@ -162,7 +162,7 @@ class Worknet_Setup {
 
 		$return 	= '';
 		$families 	= '';
-		$fonts[] 	= array( 'font' => 'Open Sans', 'weights' => '400,700', 'translate' => esc_html_x( 'on', 'Open Sans font: on or off', 'rosh' ) );
+		$fonts[] 	= array( 'font' => 'Open Sans', 'weights' => '400,700', 'translate' => esc_html_x( 'on', 'Open Sans font: on or off', 'worknet' ) );
 
 		foreach ( $fonts as $font ) {
 
@@ -210,8 +210,8 @@ class Worknet_Setup {
 	public function register_menus() {
 
 		register_nav_menus( array(
-			'primary' 		=> esc_html__( 'Primary', 'rosh' ),
-			'social' 		=> esc_html__( 'Social', 'rosh' )
+			'primary' 		=> esc_html__( 'Primary', 'worknet' ),
+			'social' 		=> esc_html__( 'Social', 'worknet' )
 		) );
 
 	} // register_menus()
@@ -224,7 +224,7 @@ class Worknet_Setup {
 	 */
 	public function text_domain() {
 
-		load_theme_textdomain( 'rosh', get_stylesheet_directory() . '/languages' );
+		load_theme_textdomain( 'worknet', get_stylesheet_directory() . '/languages' );
 
 	} // text_domain()
 
@@ -307,9 +307,9 @@ class Worknet_Setup {
 	public function widgets_init() {
 
 		register_sidebar( array(
-			'name'          => esc_html__( 'Sidebar', 'rosh' ),
+			'name'          => esc_html__( 'Sidebar', 'worknet' ),
 			'id'            => 'sidebar',
-			'description'   => esc_html__( 'Add widgets here.', 'rosh' ),
+			'description'   => esc_html__( 'Add widgets here.', 'worknet' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget'  => '</section>',
 			'before_title'  => '<h2 class="widget-title">',

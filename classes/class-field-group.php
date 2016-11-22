@@ -82,11 +82,11 @@ class Worknet_Field_Group {
 	protected function get_default_properties() {
 
 		$default 						= array();
-		$default['description'] 		= __( '', 'rosh' );
-		$default['labels']['add'] 		= __( 'Add Field', 'rosh' );
-		$default['labels']['edit'] 		= __( 'Edit Field', 'rosh' );
-		$default['labels']['header'] 	= __( 'Field Name', 'rosh' );
-		$default['labels']['remove'] 	= __( 'Remove Field', 'rosh' );
+		$default['description'] 		= __( '', 'worknet' );
+		$default['labels']['add'] 		= __( 'Add Field', 'worknet' );
+		$default['labels']['edit'] 		= __( 'Edit Field', 'worknet' );
+		$default['labels']['header'] 	= __( 'Field Name', 'worknet' );
+		$default['labels']['remove'] 	= __( 'Remove Field', 'worknet' );
 
 		return $default;
 
@@ -188,7 +188,7 @@ class Worknet_Field_Group {
 				<button aria-expanded="true" class="btn-edit repeater-edit-btn" type="button">
 					<span class="screen-reader-text"><?php
 
-						echo esc_html( $this->props['labels']['edit'], 'rosh' );
+						echo esc_html( $this->props['labels']['edit'], 'worknet' );
 
 					?></span>
 					<span class="repeater-toggle-arrow-open"></span>
@@ -210,7 +210,7 @@ class Worknet_Field_Group {
 				<div>
 					<a class="remove-repeater" href="#"><?php
 
-						echo esc_html( apply_filters( PARENT_THEME_SLUG . '_repeater_remove_link_label', $this->props['labels']['remove'] ), 'rosh' );
+						echo esc_html( apply_filters( PARENT_THEME_SLUG . '_repeater_remove_link_label', $this->props['labels']['remove'] ), 'worknet' );
 
 					?></a>
 				</div>

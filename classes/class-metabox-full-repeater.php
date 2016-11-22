@@ -38,7 +38,7 @@ class Worknet_Metabox_Full_Repeater {
 		$subfields[] 		= array( 'full-peat-time', 'time', '' );
 		$fields[] 			= array( 'full-repeater', 'repeater', $subfields );
 		$props['id'] 		= 'full-repeater';
-		$props['name'] 		= __( 'Full Repeater', 'rosh' );
+		$props['name'] 		= __( 'Full Repeater', 'worknet' );
 
 		$this->metabox 		= new Worknet_Metabox( $props, $nonce, $fields );
 

@@ -12,9 +12,9 @@ $fields[0]['atts']['class'] 			= 'widefat repeater-title';
 $fields[0]['atts']['type'] 				= 'text';
 $fields[0]['atts']['id'] 				= 'simple-peat-text';
 $fields[0]['atts']['name'] 				= 'simple-peat-text';
-$fields[0]['props']['description'] 		= __( 'Text Field Description', 'rosh' );
-$fields[0]['props']['label'] 			= __( 'Text Field', 'rosh' );
-$props['description'] 					= __( 'This repeating field is used for displaying blah blah. The Text Field above is also the name of the field.', 'rosh' );
+$fields[0]['props']['description'] 		= __( 'Text Field Description', 'worknet' );
+$fields[0]['props']['label'] 			= __( 'Text Field', 'worknet' );
+$props['description'] 					= __( 'This repeating field is used for displaying blah blah. The Text Field above is also the name of the field.', 'worknet' );
 
 if ( empty( $this->meta[$atts['name']] ) ) {
 

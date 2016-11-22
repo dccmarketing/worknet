@@ -90,15 +90,15 @@ class Worknet_Field {
 
 		if ( 'select' === $this->props['type'] ) {
 
-			return __( 'Select an option.', 'rosh' );
+			return __( 'Select an option.', 'worknet' );
 
 		}
 
-		$arias['select-formidable-form'] 	= __( 'Select a form.', 'rosh' );
-		$arias['select-menu'] 				= __( 'Select a menu.', 'rosh' );
-		$arias['select-page'] 				= __( 'Select a page.', 'rosh' );
-		$arias['select-slider'] 			= __( 'Select a slider.', 'rosh' );
-		$arias['select-taxonomy'] 			= __( 'Select a taxonomy.', 'rosh' );
+		$arias['select-formidable-form'] 	= __( 'Select a form.', 'worknet' );
+		$arias['select-menu'] 				= __( 'Select a menu.', 'worknet' );
+		$arias['select-page'] 				= __( 'Select a page.', 'worknet' );
+		$arias['select-slider'] 			= __( 'Select a slider.', 'worknet' );
+		$arias['select-taxonomy'] 			= __( 'Select a taxonomy.', 'worknet' );
 
 		return $arias[$this->props['type']];
 
@@ -190,15 +190,15 @@ class Worknet_Field {
 
 		if ( 'select' === $this->props['type'] ) {
 
-			return __( '- Select -', 'rosh' );
+			return __( '- Select -', 'worknet' );
 
 		}
 
-		$blanks['select-formidable-form'] 	= __( '- Select form -', 'rosh' );
-		$blanks['select-menu'] 			= __( '- Select menu -', 'rosh' );
-		$blanks['select-page'] 			= __( '- Select page -', 'rosh' );
-		$blanks['select-slider'] 			= __( '- Select slider -', 'rosh' );
-		$blanks['select-taxonomy'] 		= __( '- Select taxonomy -', 'rosh' );
+		$blanks['select-formidable-form'] 	= __( '- Select form -', 'worknet' );
+		$blanks['select-menu'] 			= __( '- Select menu -', 'worknet' );
+		$blanks['select-page'] 			= __( '- Select page -', 'worknet' );
+		$blanks['select-slider'] 			= __( '- Select slider -', 'worknet' );
+		$blanks['select-taxonomy'] 		= __( '- Select taxonomy -', 'worknet' );
 
 		return $blanks[$this->props['type']];
 
@@ -246,15 +246,15 @@ class Worknet_Field {
 
 		if ( 'select' === $this->props['type'] ) {
 
-			return __( 'There was an error with the selections for this field.', 'rosh' );
+			return __( 'There was an error with the selections for this field.', 'worknet' );
 
 		}
 
-		$errors['select-formidable-form'] 	= __( 'Please publish a form to use the form select field.', 'rosh' );
-		$errors['select-menu'] 				= __( 'Please publish a menu to use the menu select field.', 'rosh' );
-		$errors['select-page'] 				= __( 'Please publish a page to use the page select field.', 'rosh' );
-		$errors['select-slider'] 			= __( 'Please publish a slider to use the slider select field.', 'rosh' );
-		$errors['select-taxonomy'] 			= __( 'Please create a taxonomy to use the taxonomy select field.', 'rosh' );
+		$errors['select-formidable-form'] 	= __( 'Please publish a form to use the form select field.', 'worknet' );
+		$errors['select-menu'] 				= __( 'Please publish a menu to use the menu select field.', 'worknet' );
+		$errors['select-page'] 				= __( 'Please publish a page to use the page select field.', 'worknet' );
+		$errors['select-slider'] 			= __( 'Please publish a slider to use the slider select field.', 'worknet' );
+		$errors['select-taxonomy'] 			= __( 'Please create a taxonomy to use the taxonomy select field.', 'worknet' );
 
 		return $errors[$this->props['type']];
 
@@ -265,8 +265,8 @@ class Worknet_Field {
 	 */
 	protected function get_default_placeholder() {
 
-		$holds['date'] = __( 'Select date', 'rosh' );
-		$holds['time'] = __( 'Select time', 'rosh' );
+		$holds['date'] = __( 'Select date', 'worknet' );
+		$holds['time'] = __( 'Select time', 'worknet' );
 
 		if ( array_key_exists( $this->type, $holds ) ) {
 
@@ -288,9 +288,9 @@ class Worknet_Field {
 	protected function get_default_properties() {
 
 		$default 				= array();
-		$default['description'] = __( '', 'rosh' );
-		$default['error'] 		= __( '', 'rosh' );
-		$default['label'] 		= __( '', 'rosh' );
+		$default['description'] = __( '', 'worknet' );
+		$default['error'] 		= __( '', 'worknet' );
+		$default['label'] 		= __( '', 'worknet' );
 		$default['type']		= $this->props['type'];
 
 		if ( 'editor' === $this->props['type'] ) {
@@ -301,15 +301,15 @@ class Worknet_Field {
 
 		if ( 'file-upload' === $this->props['type'] ) {
 
-			$default['labels']['remove'] 	= __( 'Remove file', 'rosh' );
-			$default['labels']['upload'] 	= __( 'Choose/Upload file', 'rosh' );
+			$default['labels']['remove'] 	= __( 'Remove file', 'worknet' );
+			$default['labels']['upload'] 	= __( 'Choose/Upload file', 'worknet' );
 
 		}
 
 		if ( 'image-upload' === $this->props['type'] ) {
 
-			$default['labels']['remove'] 	= __( 'Remove image', 'rosh' );
-			$default['labels']['upload'] 	= __( 'Choose/Upload image', 'rosh' );
+			$default['labels']['remove'] 	= __( 'Remove image', 'worknet' );
+			$default['labels']['upload'] 	= __( 'Choose/Upload image', 'worknet' );
 
 		}
 

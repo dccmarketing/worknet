@@ -32,7 +32,7 @@ class Worknet_Metabox_Post_Format {
 		$props['context'] 			= 'top';
 		$props['file'] 				= 'post-format-data';
 		$props['id'] 				= 'post_format_data';
-		$props['name'] 				= __( 'Post Format Data', 'rosh' );
+		$props['name'] 				= __( 'Post Format Data', 'worknet' );
 		$props['screen'] 			= 'post';
 
 		$this->metabox 				= new Worknet_Metabox( $props, $nonce, $fields, $conditions );
