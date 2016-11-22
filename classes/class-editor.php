@@ -70,39 +70,39 @@ class Worknet_Editor {
 
 		$custom[2]['items'][0]['title'] 		= __( 'Full Width', 'worknet' );
 		$custom[2]['items'][0]['inline'] 		= 'div';
-		$custom[2]['items'][0]['classes'] 		= 'rosh-cb-full-width';
+		$custom[2]['items'][0]['classes'] 		= 'worknet-cb-full-width';
 
 		$custom[2]['items'][1]['title'] 		= __( 'First Half', 'worknet' );
 		$custom[2]['items'][1]['block'] 		= 'p';
-		$custom[2]['items'][1]['classes'] 		= 'rosh-cb-first-half';
+		$custom[2]['items'][1]['classes'] 		= 'worknet-cb-first-half';
 
 		$custom[2]['items'][2]['title'] 		= __( 'Half', 'worknet' );
 		$custom[2]['items'][2]['block'] 		= 'p';
-		$custom[2]['items'][2]['classes'] 		= 'rosh-cb-half';
+		$custom[2]['items'][2]['classes'] 		= 'worknet-cb-half';
 
 		$custom[2]['items'][3]['title'] 		= __( 'Third', 'worknet' );
 		$custom[2]['items'][3]['block'] 		= 'p';
-		$custom[2]['items'][3]['classes'] 		= 'rosh-cb-third';
+		$custom[2]['items'][3]['classes'] 		= 'worknet-cb-third';
 
 		$custom[2]['items'][4]['title'] 		= __( 'Two Thirds', 'worknet' );
 		$custom[2]['items'][4]['block'] 		= 'p';
-		$custom[2]['items'][4]['classes'] 		= 'rosh-cb-two-thirds';
+		$custom[2]['items'][4]['classes'] 		= 'worknet-cb-two-thirds';
 
 		$custom[2]['items'][5]['title'] 		= __( 'Last Third', 'worknet' );
 		$custom[2]['items'][5]['block'] 		= 'p';
-		$custom[2]['items'][5]['classes'] 		= 'rosh-cb-last-third';
+		$custom[2]['items'][5]['classes'] 		= 'worknet-cb-last-third';
 
 		$custom[2]['items'][6]['title'] 		= __( 'Quarter', 'worknet' );
 		$custom[2]['items'][6]['block'] 		= 'p';
-		$custom[2]['items'][6]['classes'] 		= 'rosh-cb-quarter';
+		$custom[2]['items'][6]['classes'] 		= 'worknet-cb-quarter';
 
 		$custom[2]['items'][7]['title'] 		= __( 'Last Quarter', 'worknet' );
 		$custom[2]['items'][7]['block'] 		= 'p';
-		$custom[2]['items'][7]['classes'] 		= 'rosh-cb-last-quarter';
+		$custom[2]['items'][7]['classes'] 		= 'worknet-cb-last-quarter';
 
 		$custom[2]['items'][8]['title'] 		= __( 'Three Quarters', 'worknet' );
 		$custom[2]['items'][8]['block'] 		= 'p';
-		$custom[2]['items'][8]['classes'] 		= 'rosh-cb-three-quarters';
+		$custom[2]['items'][8]['classes'] 		= 'worknet-cb-three-quarters';
 
 
 
@@ -110,11 +110,11 @@ class Worknet_Editor {
 
 		$custom[3]['items'][0]['title'] 		= __( 'Flex Around', 'worknet' );
 		$custom[3]['items'][0]['block'] 		= 'div';
-		$custom[3]['items'][0]['classes'] 		= 'rosh-flex-around';
+		$custom[3]['items'][0]['classes'] 		= 'worknet-flex-around';
 
 		$custom[3]['items'][1]['title'] 		= __( 'Flex Between', 'worknet' );
 		$custom[3]['items'][1]['block'] 		= 'div';
-		$custom[3]['items'][1]['classes'] 		= 'rosh-flex-tween';
+		$custom[3]['items'][1]['classes'] 		= 'worknet-flex-tween';
 
 
 

@@ -67,7 +67,7 @@ class Worknet_Utilities {
 
 		if ( is_admin() ) { return $tag; }
 
-		$check = strpos( $handle, 'rosh-' );
+		$check = strpos( $handle, 'worknet-' );
 
 		if ( ! $check || 0 < $check ) { return $tag; }
 

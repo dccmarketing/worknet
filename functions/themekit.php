@@ -82,9 +82,9 @@ if ( ! function_exists( 'worknet_get_attachment_by_name' ) ) :
 		$args['post_status'] 	= 'any';
 
 		/**
-		 * The rosh-get-attachment-by-name-args filter.
+		 * The worknet-get-attachment-by-name-args filter.
 		 */
-		$args 	= apply_filters( 'rosh-get-attachment-by-name-args', $args );
+		$args 	= apply_filters( 'worknet-get-attachment-by-name-args', $args );
 		$posts 	= $this->get_posts( 'attachment', $args, $post_name . '_attachments' );
 
 		if ( $posts->posts[0] ) {
@@ -285,9 +285,9 @@ if ( ! function_exists( 'worknet_get_state_abbreviation' ) ) :
 		$states['Wyoming'] 			= 'WY';
 
 		/**
-		 * The rosh-get-state-name filter.
+		 * The worknet-get-state-name filter.
 		 */
-		$states = apply_filters( 'rosh-get-state-abbr', $states );
+		$states = apply_filters( 'worknet-get-state-abbr', $states );
 
 		if ( empty( $state ) ) {
 
@@ -363,9 +363,9 @@ if ( ! function_exists( 'worknet_get_state_name' ) ) :
 		$states['WY'] 	= 'Wyoming';
 
 		/**
-		 * The rosh-get-state-name filter.
+		 * The worknet-get-state-name filter.
 		 */
-		$states = apply_filters( 'rosh-get-state-name', $states );
+		$states = apply_filters( 'worknet-get-state-name', $states );
 
 		if ( empty( $state ) ) {
 

@@ -126,7 +126,7 @@ class Worknet_Critical {
 	 */
 	public function set_stylesheets() {
 		
-		$this->stylesheets['rosh-style'] = get_stylesheet_uri();
+		$this->stylesheets['worknet-style'] = get_stylesheet_uri();
 		
 		/**
 		 * The worknet_async_stylesheets filter.
@@ -167,7 +167,7 @@ class Worknet_Critical {
 	 */
 	public function tweak_tag( $tag, $handle, $href, $media ) {
 		
-		if ( 'rosh-style' !== $handle ) { return $tag; }
+		if ( 'worknet-style' !== $handle ) { return $tag; }
 		
 		return "<link rel=\"preload\" id=\"$handle-css\" $title href=\"$href\" type=\"text/css\" media=\"media\" as=\"style\" onload=\"this.rel='stylesheet'\" />";
 		

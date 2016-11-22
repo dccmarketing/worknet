@@ -236,7 +236,7 @@ if ( ! function_exists( 'worknet_get_video_service' ) ) :
 		/**
 		 * bp-profile-widgets-service-from-url-checks filter
 		 */
-		$checks 	= apply_filters( 'rosh-video-services', $checks, $string );
+		$checks 	= apply_filters( 'worknet-video-services', $checks, $string );
 		$service 	= FALSE;
 
 		foreach ( $checks as $check ) {

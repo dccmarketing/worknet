@@ -29,8 +29,8 @@ if ( FALSE === strpos( $atts['id'], $format ) ) {
 
 ?><div class="post-format-field <?php echo esc_attr( $class ); ?>" id="post_format_audio"><?php
 
-$atts 	= apply_filters( 'rosh-field-atts-' . $atts['id'], $atts, $props );
-$props 	= apply_filters( 'rosh-field-props-' . $atts['id'], $props, $atts );
+$atts 	= apply_filters( 'worknet-field-atts-' . $atts['id'], $atts, $props );
+$props 	= apply_filters( 'worknet-field-props-' . $atts['id'], $props, $atts );
 $field 	= new Worknet_Field( 'url', $atts, $props );
 $field->display_field();
 
@@ -60,8 +60,8 @@ if ( FALSE === strpos( $atts['id'], $format ) ) {
 
 ?><div class="post-format-field <?php echo esc_attr( $class ); ?>" id="post_format_image"><?php
 
-$atts 	= apply_filters( 'rosh-field-atts-' . $atts['id'], $atts, $props );
-$props 	= apply_filters( 'rosh-field-props-' . $atts['id'], $props, $atts );
+$atts 	= apply_filters( 'worknet-field-atts-' . $atts['id'], $atts, $props );
+$props 	= apply_filters( 'worknet-field-props-' . $atts['id'], $props, $atts );
 $field 	= new Worknet_Field( 'image-upload', $atts, $props );
 $field->display_field();
 
@@ -91,8 +91,8 @@ if ( FALSE === strpos( $atts['id'], $format ) ) {
 
 ?><div class="post-format-field <?php echo esc_attr( $class ); ?>" id="post_format_link"><?php
 
-$atts 	= apply_filters( 'rosh-field-atts-' . $atts['id'], $atts, $props );
-$props 	= apply_filters( 'rosh-field-props-' . $atts['id'], $props, $atts );
+$atts 	= apply_filters( 'worknet-field-atts-' . $atts['id'], $atts, $props );
+$props 	= apply_filters( 'worknet-field-props-' . $atts['id'], $props, $atts );
 $field 	= new Worknet_Field( 'url', $atts, $props );
 $field->display_field();
 
@@ -122,8 +122,8 @@ if ( FALSE === strpos( $atts['id'], $format ) ) {
 
 ?><div class="post-format-field <?php echo esc_attr( $class ); ?>" id="post_format_video"><?php
 
-$atts 	= apply_filters( 'rosh-field-atts-' . $atts['id'], $atts, $props );
-$props 	= apply_filters( 'rosh-field-props-' . $atts['id'], $props, $atts );
+$atts 	= apply_filters( 'worknet-field-atts-' . $atts['id'], $atts, $props );
+$props 	= apply_filters( 'worknet-field-props-' . $atts['id'], $props, $atts );
 $field 	= new Worknet_Field( 'url', $atts, $props );
 $field->display_field();
 

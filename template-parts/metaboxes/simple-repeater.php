@@ -26,8 +26,8 @@ if ( empty( $this->meta[$atts['name']] ) ) {
 
 }
 
-$atts 	= apply_filters( 'rosh-field-atts-' . $atts['name'], $atts, $props );
-$props 	= apply_filters( 'rosh-field-props-' . $atts['name'], $props, $atts );
+$atts 	= apply_filters( 'worknet-field-atts-' . $atts['name'], $atts, $props );
+$props 	= apply_filters( 'worknet-field-props-' . $atts['name'], $props, $atts );
 $group 	= new Worknet_Field_Group( 'repeater', $atts, $props, $fields );
 $group->display_group();
 
