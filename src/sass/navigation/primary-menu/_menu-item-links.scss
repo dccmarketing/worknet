@@ -1,0 +1,44 @@
+/**
+ * Menu Item Links.
+ */
+.primary-menu-item-link {
+	align-items 	: center;
+	color 			: $dark;
+	display			: flex;
+	padding 		: 0.5em 1em;
+	text-decoration	: none;
+	transition 		: $trans__default;
+	white-space 	: nowrap;
+
+	@media only screen and (max-width: $bp__menu-button) {
+
+		justify-content	: space-between;
+	}
+
+	@media only screen and (min-width: $bp__sidemenu + 1) {
+		color: $dark;
+	}
+
+	@media only screen and (min-width: $bp__menu-button + 1) {
+		background-color: $med;
+		color 			: $darkdark;
+	}
+
+	&:focus {
+		outline-color: $med;
+	}
+
+}
+
+.primary-menu-item-link-1 { // 2nd-level menu item link, first submenu
+	@media only screen and (max-width: $bp__sidemenu) {
+		padding-left: 2em;
+	}
+}
+
+.primary-menu-item-link-2 { // 3rd-level menu item link, second submenu
+	@media only screen and (max-width: $bp__sidemenu) {
+		border-left : none;
+		padding-left: 3em;
+	}
+}

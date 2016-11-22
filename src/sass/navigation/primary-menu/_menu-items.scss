@@ -1,0 +1,50 @@
+/**
+ * Menu Items.
+ */
+.primary-menu-item { // Every menu item
+	position: relative;
+
+	&:hover,
+	&.focus {
+
+		> ul {
+			@media only screen and (min-width: $bp__sidemenu + 1) {
+				left 		: auto;
+				opacity 	: 1;
+				visibility 	: visible;
+			}
+		}
+
+	}
+
+	&.menu-item-has-children {
+		@media only screen and (max-width: $bp__sidemenu) {
+			border-bottom 	: 3px solid $med;
+		}
+	}
+}
+
+
+
+.primary-menu-item-1 { // 2nd-level menu item, first submenu
+	display 	: block;
+	text-align 	: left;
+
+	&:last-child { // Last child of the 2nd-level submenu and below.
+
+		@media only screen and (max-width: $bp__sidemenu) {
+			padding-bottom: 0;
+		}
+	}
+
+	&:hover,
+	&.focus {
+
+		> ul {
+			@media only screen and (min-width: $bp__sidemenu + 1) {
+				left 	: 100%;
+				top 	: 0;
+			}
+		}
+	}
+}

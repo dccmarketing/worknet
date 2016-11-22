@@ -1,0 +1,27 @@
+input,
+textarea {
+	color 			: $dark;
+	border 			: 1px solid $med;
+	border-radius 	: 3px;
+	padding 		: 3px;
+
+	&:focus {
+		border-color 	: $med;
+		color 			: $dark;
+		outline-color 	: $color__outline;
+	}
+}
+
+textarea {
+	width 		: 100%;
+}
+
+select {
+	-webkit-appearance 	: none;
+	-moz-appearance 	: none;
+	appearance 			: none;
+	background 			: $med;
+	border 				: 0;
+	color 				: $dark;
+	padding 			: 0.1em 0.5em;
+}

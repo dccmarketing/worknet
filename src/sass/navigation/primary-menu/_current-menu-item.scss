@@ -1,0 +1,46 @@
+/**
+ * Current Menu Items.
+ */
+.current-primary-menu-item {
+	@media only screen and (min-width: $bp__sidemenu + 1) {
+		background-color: $darkmed;
+	}
+}
+
+.current-primary-menu-item-link {
+	color: $dark;
+	
+	&:visited {
+		color: $dark;
+	}
+	
+	&:hover {
+		color: $med;
+	}
+}
+
+
+/**
+ * Current Menu Items.
+ */
+// .current-menu-item,
+// .current-menu-parent,
+// .current_page_item,
+// .current_page_ancestor {
+// 
+// 	@media only screen and (min-width: $bp__sidemenu + 1) {
+// 		background-color: $darkmed;
+// 	}
+// 
+// 	> a { // menu item link directly under the above current class menu items and below.
+// 		color: $dark;
+// 	}
+// 
+// 	&:hover,
+// 	&.focus {
+// 
+// 		> a {
+// 			color: $dark;
+// 		}
+// 	}
+// }
