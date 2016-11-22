@@ -3,7 +3,7 @@
  * Customizations for the WordPress Editor.
  *
  * @since 			1.0.0
- * @package 		Rosh
+ * @package 		Worknet
  * @subpackage 		Rosh/classes
  */
 class Worknet_Editor {

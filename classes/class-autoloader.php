@@ -4,7 +4,7 @@
  * Autoloader for PHP 5.3+
  *
  * @since 			1.0.0
- * @package 		Rosh
+ * @package 		Worknet
  * @subpackage 		Rosh/classes
  */
 class Worknet_Autoloader {

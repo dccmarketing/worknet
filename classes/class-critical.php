@@ -4,7 +4,7 @@
  * Methods for creating and using critical CSS.
  *
  * @since 			1.0.0
- * @package 		Rosh
+ * @package 		Worknet
  * @subpackage 		Rosh/classes
  */
 class Worknet_Critical {

@@ -4,7 +4,7 @@
  * A class of methods related to users and their profiles.
  *
  * @since 			1.0.0
- * @package 		Rosh
+ * @package 		Worknet
  * @subpackage 		Rosh/classes
  */
 class Worknet_Users {

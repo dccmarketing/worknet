@@ -4,7 +4,7 @@
  * Custom walker for adding a wrapper around submenus in the main menu
  *
  * @since 			1.0.0
- * @package 		Rosh
+ * @package 		Worknet
  * @subpackage 		Rosh/classes
  */
 class Worknet_Walker extends Walker_Nav_Menu {

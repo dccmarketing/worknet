@@ -3,7 +3,7 @@
  * A set of methods for fetching posts from the database.
  *
  * @since 			1.0.0
- * @package 		Rosh
+ * @package 		Worknet
  * @subpackage 		Rosh/classes
  */
 class Worknet_Query {

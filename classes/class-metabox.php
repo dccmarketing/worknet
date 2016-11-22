@@ -3,7 +3,7 @@
  * The metabox-specific functionality of the theme.
  *
  * @since 			1.0.0
- * @package 		Rosh
+ * @package 		Worknet
  * @subpackage 		Rosh/classes
  */
 class Worknet_Metabox {

@@ -3,7 +3,7 @@
  * A collection of useful functions.
  *
  * @since 			1.0.0
- * @package 		Rosh
+ * @package 		Worknet
  * @subpackage 		Rosh/functions
  */
 

@@ -4,7 +4,7 @@
  * A class of methods using hooks in the theme.
  *
  * @since 			1.0.0
- * @package 		Rosh
+ * @package 		Worknet
  * @subpackage 		Rosh/classes
  */
 class Worknet_Hidden_Search {

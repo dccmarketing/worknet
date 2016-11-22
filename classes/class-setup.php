@@ -4,7 +4,7 @@
  * Methods for setting up the Rosh theme.
  *
  * @since 			1.0.0
- * @package 		Rosh
+ * @package 		Worknet
  * @subpackage 		Rosh/classes
  */
 class Worknet_Setup {

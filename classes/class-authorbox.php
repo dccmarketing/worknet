@@ -4,7 +4,7 @@
  * A class of methods for displaying an author information.
  *
  * @since 			1.0.0
- * @package 		Rosh
+ * @package 		Worknet
  * @subpackage 		Rosh/classes
  */
 class Worknet_Authorbox {
