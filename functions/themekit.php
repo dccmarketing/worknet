@@ -4,7 +4,7 @@
  *
  * @since 			1.0.0
  * @package 		Worknet
- * @subpackage 		Rosh/functions
+ * @subpackage 		Worknet/functions
  */
 
 /**

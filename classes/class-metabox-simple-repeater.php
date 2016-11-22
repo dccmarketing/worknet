@@ -4,7 +4,7 @@
  *
  * @since 			1.0.0
  * @package 		Worknet
- * @subpackage 		Rosh/classes
+ * @subpackage 		Worknet/classes
  */
 class Worknet_Metabox_Simple_Repeater {
 

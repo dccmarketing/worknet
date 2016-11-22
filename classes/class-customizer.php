@@ -7,7 +7,7 @@
  * @link 			https://codex.wordpress.org/Theme_Customization_API
  * @since 			1.0.0
  * @package 		Worknet
- * @subpackage 		Rosh/classes
+ * @subpackage 		Worknet/classes
  */
 class Worknet_Customizer {
 

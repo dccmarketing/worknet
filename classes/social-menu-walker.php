@@ -5,7 +5,7 @@
  *
  * @since 			1.0.0
  * @package 		Worknet
- * @subpackage 		Rosh/classes
+ * @subpackage 		Worknet/classes
  */
 class Worknet_Social_Walker extends Walker_Nav_Menu {
 
