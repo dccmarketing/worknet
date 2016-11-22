@@ -11,7 +11,7 @@
  * TODO: add map field (output displays a Google Map)
  * TODO: add oembed field (output displays the oembed content)
  */
-class Rosh_Field {
+class Worknet_Field {
 
 	/**
 	 * The field attributes.

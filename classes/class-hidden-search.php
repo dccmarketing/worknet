@@ -7,7 +7,7 @@
  * @package 		Rosh
  * @subpackage 		Rosh/classes
  */
-class Rosh_Hidden_Search {
+class Worknet_Hidden_Search {
 
 	/**
 	 * Constructor

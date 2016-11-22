@@ -6,7 +6,7 @@
  * @package 		Rosh
  * @subpackage 		Rosh/classes
  */
-class Rosh_Metabox_Post_Format {
+class Worknet_Metabox_Post_Format {
 
 	/**
 	 * The metabox class object.
@@ -35,7 +35,7 @@ class Rosh_Metabox_Post_Format {
 		$props['name'] 				= __( 'Post Format Data', 'rosh' );
 		$props['screen'] 			= 'post';
 
-		$this->metabox 				= new Rosh_Metabox( $props, $nonce, $fields, $conditions );
+		$this->metabox 				= new Worknet_Metabox( $props, $nonce, $fields, $conditions );
 
 	} // __construct()
 

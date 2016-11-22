@@ -31,7 +31,7 @@ if ( FALSE === strpos( $atts['id'], $format ) ) {
 
 $atts 	= apply_filters( 'rosh-field-atts-' . $atts['id'], $atts, $props );
 $props 	= apply_filters( 'rosh-field-props-' . $atts['id'], $props, $atts );
-$field 	= new Rosh_Field( 'url', $atts, $props );
+$field 	= new Worknet_Field( 'url', $atts, $props );
 $field->display_field();
 
 unset( $atts );
@@ -62,7 +62,7 @@ if ( FALSE === strpos( $atts['id'], $format ) ) {
 
 $atts 	= apply_filters( 'rosh-field-atts-' . $atts['id'], $atts, $props );
 $props 	= apply_filters( 'rosh-field-props-' . $atts['id'], $props, $atts );
-$field 	= new Rosh_Field( 'image-upload', $atts, $props );
+$field 	= new Worknet_Field( 'image-upload', $atts, $props );
 $field->display_field();
 
 unset( $atts );
@@ -93,7 +93,7 @@ if ( FALSE === strpos( $atts['id'], $format ) ) {
 
 $atts 	= apply_filters( 'rosh-field-atts-' . $atts['id'], $atts, $props );
 $props 	= apply_filters( 'rosh-field-props-' . $atts['id'], $props, $atts );
-$field 	= new Rosh_Field( 'url', $atts, $props );
+$field 	= new Worknet_Field( 'url', $atts, $props );
 $field->display_field();
 
 unset( $atts );
@@ -124,7 +124,7 @@ if ( FALSE === strpos( $atts['id'], $format ) ) {
 
 $atts 	= apply_filters( 'rosh-field-atts-' . $atts['id'], $atts, $props );
 $props 	= apply_filters( 'rosh-field-props-' . $atts['id'], $props, $atts );
-$field 	= new Rosh_Field( 'url', $atts, $props );
+$field 	= new Worknet_Field( 'url', $atts, $props );
 $field->display_field();
 
 unset( $atts );

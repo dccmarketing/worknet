@@ -7,7 +7,7 @@
  * @package 		Rosh
  * @subpackage 		Rosh/classes
  */
-class Rosh_Slushicons {
+class Worknet_Slushicons {
 
 	/**
 	 * Constructor

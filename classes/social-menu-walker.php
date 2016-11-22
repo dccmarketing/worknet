@@ -7,7 +7,7 @@
  * @package 		Rosh
  * @subpackage 		Rosh/classes
  */
-class Rosh_Social_Walker extends Walker_Nav_Menu {
+class Worknet_Social_Walker extends Walker_Nav_Menu {
 
 	/**
 	 * Adds a wrapper around submenus

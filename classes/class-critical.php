@@ -7,7 +7,7 @@
  * @package 		Rosh
  * @subpackage 		Rosh/classes
  */
-class Rosh_Critical {
+class Worknet_Critical {
 	
 	/**
 	 * The stylesheets used in this theme.

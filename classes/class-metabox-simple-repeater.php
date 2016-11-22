@@ -6,7 +6,7 @@
  * @package 		Rosh
  * @subpackage 		Rosh/classes
  */
-class Rosh_Metabox_Simple_Repeater {
+class Worknet_Metabox_Simple_Repeater {
 
 	/**
 	 * The metabox class object.
@@ -27,7 +27,7 @@ class Rosh_Metabox_Simple_Repeater {
 		$props['id'] 		= 'simple-repeater';
 		$props['name'] 		= __( 'Simple Repeater', 'rosh' );
 
-		$this->metabox 		= new Rosh_Metabox( $props, $nonce, $fields );
+		$this->metabox 		= new Worknet_Metabox( $props, $nonce, $fields );
 
 	} // __construct()
 

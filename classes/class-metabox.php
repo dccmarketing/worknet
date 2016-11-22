@@ -6,7 +6,7 @@
  * @package 		Rosh
  * @subpackage 		Rosh/classes
  */
-class Rosh_Metabox {
+class Worknet_Metabox {
 
 	/**
 	 * Array of conditions where the metabox should appear.
@@ -105,7 +105,7 @@ class Rosh_Metabox {
 
 		if ( empty( $this->conditions ) || ! is_array( $this->conditions ) ) { return FALSE; }
 
-		$conditioner = new Rosh_Conditions();
+		$conditioner = new Worknet_Conditions();
 
 		foreach ( $this->conditions as $type => $condition ) {
 
@@ -223,7 +223,7 @@ class Rosh_Metabox {
 		if ( empty( $meta ) ) { return FALSE; }
 		if ( empty( $posted ) ) { return FALSE; }
 
-		$sanitizer = new Rosh_Sanitize();
+		$sanitizer = new Worknet_Sanitize();
 
 		if ( is_array( $meta[0] ) ) {
 

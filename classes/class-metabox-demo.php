@@ -6,7 +6,7 @@
  * @package 		Rosh
  * @subpackage 		Rosh/classes
  */
-class Rosh_Metabox_Demo {
+class Worknet_Metabox_Demo {
 
 	/**
 	 * The metabox class object.
@@ -39,7 +39,7 @@ class Rosh_Metabox_Demo {
 		$props['name'] 		= __( 'Demo', 'rosh' );
 		$props['id'] 		= 'demo';
 
-		$this->metabox 		= new Rosh_Metabox( $props, $nonce, $fields );
+		$this->metabox 		= new Worknet_Metabox( $props, $nonce, $fields );
 
 	} // __construct()
 

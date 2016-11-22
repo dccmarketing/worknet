@@ -7,7 +7,7 @@
  * @package 		Rosh
  * @subpackage 		Rosh/classes
  */
-class Rosh_Menukit {
+class Worknet_Menukit {
 
 	/**
 	 * Constructor

@@ -7,7 +7,7 @@
  * @package 		Rosh
  * @subpackage 		Rosh/classes
  */
-class Rosh_Themehooks {
+class Worknet_Themehooks {
 
 	/**
 	 * Constructor
@@ -482,7 +482,7 @@ class Rosh_Themehooks {
 				$menu_args['items_wrap'] 		= '<ul id="%1$s" class="%2$s"><button class="close-tablet-menu-btn"><span class="close-btn-text">Close Menu</span></button>%3$s</ul>';
 				$menu_args['menu_class']      	= 'primary-menu-items primary-menu-items-0';
 				$menu_args['theme_location'] 	= 'primary';
-				$menu_args['walker']  			= new Rosh_Walker();
+				$menu_args['walker']  			= new Worknet_Walker();
 
 				wp_nav_menu( $menu_args );
 
@@ -506,7 +506,7 @@ class Rosh_Themehooks {
 		$menu_args['menu_id']         	= 'social-menu';
 		$menu_args['menu_class']      	= 'social-menu-items social-menu-items-0';
 		$menu_args['depth']           	= 1;
-		$menu_args['walker']  			= new Rosh_Social_Walker();
+		$menu_args['walker']  			= new Worknet_Social_Walker();
 
 		wp_nav_menu( $menu_args );
 

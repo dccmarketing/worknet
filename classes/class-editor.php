@@ -6,7 +6,7 @@
  * @package 		Rosh
  * @subpackage 		Rosh/classes
  */
-class Rosh_Editor {
+class Worknet_Editor {
 
 	/**
 	 * Constructor

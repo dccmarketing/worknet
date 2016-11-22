@@ -6,7 +6,7 @@
  * @package 		Rosh
  * @subpackage 		Rosh/classes
  */
-class Rosh_Query {
+class Worknet_Query {
 
 	/**
 	 * Constructor

@@ -8,7 +8,7 @@
  * @subpackage 		Rosh/classes
  */
 
-class Rosh_Conditions {
+class Worknet_Conditions {
 
 	/**
 	 * Constructor

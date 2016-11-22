@@ -18,7 +18,7 @@ if ( ! empty( $this->meta[$atts['id']][0] ) ) {
 
 $atts 	= apply_filters( 'rosh-field-atts-' . $atts['id'], $atts, $props );
 $props 	= apply_filters( 'rosh-field-props-' . $atts['id'], $props, $atts );
-$field 	= new Rosh_Field( 'text', $atts, $props );
+$field 	= new Worknet_Field( 'text', $atts, $props );
 $field->display_field();
 
 unset( $atts );

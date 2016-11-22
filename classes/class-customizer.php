@@ -9,7 +9,7 @@
  * @package 		Rosh
  * @subpackage 		Rosh/classes
  */
-class Rosh_Customizer {
+class Worknet_Customizer {
 
 	/**
 	 * Constructor

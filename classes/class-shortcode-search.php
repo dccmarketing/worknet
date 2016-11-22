@@ -8,7 +8,7 @@
  * @subpackage 		Rosh/classes
  */
 
-class Rosh_Shortcode_Search {
+class Worknet_Shortcode_Search {
 
 	/**
 	 * Constructor.

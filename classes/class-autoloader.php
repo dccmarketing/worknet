@@ -7,7 +7,7 @@
  * @package 		Rosh
  * @subpackage 		Rosh/classes
  */
-class Rosh_Autoloader {
+class Worknet_Autoloader {
 
 	/**
 	* Autoloader function
@@ -16,9 +16,9 @@ class Rosh_Autoloader {
 	*/
 	public static function autoloader( $class_name ) {
 
-		if ( 0 !== strpos( $class_name, 'Rosh_' ) ) { return; }
+		if ( 0 !== strpos( $class_name, 'Worknet_' ) ) { return; }
 
-		$class_name = str_replace( 'Rosh_', '', $class_name );
+		$class_name = str_replace( 'Worknet_', '', $class_name );
 		$lower 		= strtolower( $class_name );
 		$file      	= 'class-' . str_replace( '_', '-', $lower ) . '.php';
 		$base_path 	= trailingslashit( get_stylesheet_directory() );
@@ -47,4 +47,4 @@ class Rosh_Autoloader {
 
 } // class
 
-spl_autoload_register( 'Rosh_Autoloader::autoloader' );
+spl_autoload_register( 'Worknet_Autoloader::autoloader' );

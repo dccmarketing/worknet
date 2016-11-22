@@ -7,7 +7,7 @@
  * @package 		Rosh
  * @subpackage 		Rosh/classes
  */
-class Rosh_Setup {
+class Worknet_Setup {
 
 	/**
 	 * Constructor

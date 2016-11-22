@@ -12,7 +12,7 @@
  * TODO: Get datepickers, colorpickers, timepickers, and editors to work properly.
  * TODO: figure out checkbox groups.
  */
-class Rosh_Field_Group {
+class Worknet_Field_Group {
 
 	/**
 	 * The group attributes.
@@ -266,7 +266,7 @@ class Rosh_Field_Group {
 
 			//echo '<pre>'; print_r( $atts ); echo '</pre>';
 
-			$new_field = new Rosh_Field( $type, $atts, $props );
+			$new_field = new Worknet_Field( $type, $atts, $props );
 			$new_field->display_field();
 
 		/*?></p><?php*/
@@ -291,7 +291,7 @@ class Rosh_Field_Group {
 		$atts['id'] 			= '_repeater_title';
 		$atts['name'] 			= $this->atts['name'] . '[' . $uid . '][_repeater_title]';
 		$atts['value'] 			= $this->get_repeater_title( $uid );
-		$field 					= new Rosh_Field( 'hidden', $atts, array() );
+		$field 					= new Worknet_Field( 'hidden', $atts, array() );
 		$field->display_field();
 
 	} // output_hidden_repeater_title_field()
@@ -314,7 +314,7 @@ class Rosh_Field_Group {
 		$atts['id'] 			= '_repeater_uid';
 		$atts['name'] 			= $this->atts['name'] . '[' . $uid . '][_repeater_uid]';
 		$atts['value'] 			= $uid;
-		$field 					= new Rosh_Field( 'hidden', $atts, array() );
+		$field 					= new Worknet_Field( 'hidden', $atts, array() );
 		$field->display_field();
 
 	} // output_hidden_repeater_uid_field()

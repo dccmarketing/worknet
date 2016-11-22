@@ -7,7 +7,7 @@
  * @package 		Rosh
  * @subpackage 		Rosh/classes
  */
-class Rosh_Soliloquy {
+class Worknet_Soliloquy {
 
 	public function __construct(){}
 

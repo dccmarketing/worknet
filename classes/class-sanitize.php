@@ -8,7 +8,7 @@
  * @subpackage 		Rosh/classes
  */
 
-class Rosh_Sanitize {
+class Worknet_Sanitize {
 
 	/**
 	 * Constructor

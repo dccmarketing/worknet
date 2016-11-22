@@ -7,7 +7,7 @@
  * @package 		Rosh
  * @subpackage 		Rosh/classes
  */
-class Rosh_RESTAPI {
+class Worknet_RESTAPI {
 
 	/**
 	 * Constructor

@@ -68,7 +68,7 @@ $classes[] = 'Utilities';
 
 foreach ( $classes as $class ) {
 
-	$class_name 	= 'Rosh_' . $class;
+	$class_name 	= 'Worknet_' . $class;
 	$class_obj 		= new $class_name();
 
 	add_action( 'after_setup_theme', array( $class_obj, 'hooks' ) );

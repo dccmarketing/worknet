@@ -1,6 +1,6 @@
 <?php
 
-class Rosh_Geography {
+class Worknet_Geography {
 	
 	var $country;
 	

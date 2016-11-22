@@ -7,7 +7,7 @@
  * @package 		Rosh
  * @subpackage 		Rosh/classes
  */
-class Rosh_Authorbox {
+class Worknet_Authorbox {
 
 	/**
 	 * Constructor

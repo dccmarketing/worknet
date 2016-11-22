@@ -8,7 +8,7 @@
  * @subpackage 		Rosh/classes
  */
 
-class Rosh_Shortcode_Listmenu {
+class Worknet_Shortcode_Listmenu {
 
 	/**
 	 * Constructor.

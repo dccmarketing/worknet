@@ -7,7 +7,7 @@
  * @package 		Rosh
  * @subpackage 		Rosh/classes
  */
-class Rosh_Users {
+class Worknet_Users {
 
 	/**
 	 * Constructor

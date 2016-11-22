@@ -6,7 +6,7 @@
  * @package 		Rosh
  * @subpackage 		Rosh/classes
  */
-class Rosh_Metabox_Subtitle {
+class Worknet_Metabox_Subtitle {
 
 	/**
 	 * The metabox class object.
@@ -28,7 +28,7 @@ class Rosh_Metabox_Subtitle {
 		$props['id'] 		= 'subtitle';
 		$props['name'] 		= __( 'Subtitle', 'rosh' );
 
-		$this->metabox 		= new Rosh_Metabox( $props, $nonce, $fields );
+		$this->metabox 		= new Worknet_Metabox( $props, $nonce, $fields );
 
 	} // __construct()
 
