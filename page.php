@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Rosh
+ * @package Worknet
  */
 
 get_header();

@@ -1,16 +1,9 @@
 <?php
 /**
- * This file calls the init.php file, but only
- * if the child theme hasn't called it first.
+ * This file is a core theme file and should not be edited.
  *
- * This method allows the child theme to load
- * the framework so it can use the framework
- * components immediately.
- *
- * This file is a core Rosh file and should not be edited.
- *
- * @package  Rosh
- * @author   slushman
+ * @package  Worknet
+ * @author   dccmarketing
  * @license  GPL-2.0+
  * @link     https://codex.wordpress.org/Functions_File_Explained
  */
@@ -52,11 +45,11 @@ $classes[] = 'Customizer';
 $classes[] = 'Editor';
 $classes[] = 'Hidden_Search';
 $classes[] = 'Menukit';
-$classes[] = 'Metabox_Demo';
+// $classes[] = 'Metabox_Demo';
 // $classes[] = 'Metabox_Full_Repeater';
 // $classes[] = 'Metabox_Post_Format';
-$classes[] = 'Metabox_Simple_Repeater';
-$classes[] = 'Metabox_Subtitle';
+// $classes[] = 'Metabox_Simple_Repeater';
+// $classes[] = 'Metabox_Subtitle';
 $classes[] = 'Setup';
 $classes[] = 'Shortcode_Listmenu';
 $classes[] = 'Shortcode_Search';

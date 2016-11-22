@@ -2,7 +2,7 @@
 /**
  * Template part for displaying a metabox.
  *
- * @package Rosh
+ * @package Worknet
  */
 
 wp_nonce_field( PARENT_THEME_SLUG, 'nonce_worknet_post_format' );

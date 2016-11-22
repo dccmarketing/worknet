@@ -3,7 +3,7 @@
 /**
  * A class of methods related to images.
  *
- * @package Rosh
+ * @package Worknet
  * @author Slushman <chris@slushman.com>
  */
 
