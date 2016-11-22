@@ -19,11 +19,11 @@ class Worknet_Hidden_Search {
 	 */
 	public function hooks() {
 
-		add_action( 'rosh_body_top', array( $this, 'add_hidden_search' ), 15 );
+		add_action( 'worknet_body_top', array( $this, 'add_hidden_search' ), 15 );
 
-		add_filter( 'rosh_search_form_class', array( $this, 'add_class_to_form' ), 10, 1 );
-		add_filter( 'rosh_search_field_class', array( $this, 'add_class_to_field' ), 10, 1 );
-		add_filter( 'rosh_search_button_class', array( $this, 'add_class_to_button' ), 10, 1 );
+		add_filter( 'worknet_search_form_class', array( $this, 'add_class_to_form' ), 10, 1 );
+		add_filter( 'worknet_search_field_class', array( $this, 'add_class_to_field' ), 10, 1 );
+		add_filter( 'worknet_search_button_class', array( $this, 'add_class_to_button' ), 10, 1 );
 
 	} // hooks()
 
@@ -69,7 +69,7 @@ class Worknet_Hidden_Search {
 	/**
 	 * Adds a hidden search field
 	 *
-	 * @hooked 		rosh_body_top 		15
+	 * @hooked 		worknet_body_top 		15
 	 * @return 		mixed 				The HTML markup for a search field
 	 */
 	public function add_hidden_search() {

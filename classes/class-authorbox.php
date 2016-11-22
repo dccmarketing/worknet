@@ -19,13 +19,13 @@ class Worknet_Authorbox {
 	 */
 	public function hooks() {
 
-		add_action( 'rosh_authorbox', array( $this, 'wrap_begin' ), 5, 1 );
-		add_action( 'rosh_authorbox', array( $this, 'avatar' ), 15, 1 );
-		add_action( 'rosh_authorbox', array( $this, 'name' ), 25, 1 );
-		add_action( 'rosh_authorbox', array( $this, 'bio' ), 35, 1 );
-		add_action( 'rosh_authorbox', array( $this, 'posts_link' ), 45, 1 );
-		add_action( 'rosh_authorbox', array( $this, 'social_links' ), 55, 1 );
-		add_action( 'rosh_authorbox', array( $this, 'wrap_end' ), 95, 1 );
+		add_action( 'worknet_authorbox', array( $this, 'wrap_begin' ), 5, 1 );
+		add_action( 'worknet_authorbox', array( $this, 'avatar' ), 15, 1 );
+		add_action( 'worknet_authorbox', array( $this, 'name' ), 25, 1 );
+		add_action( 'worknet_authorbox', array( $this, 'bio' ), 35, 1 );
+		add_action( 'worknet_authorbox', array( $this, 'posts_link' ), 45, 1 );
+		add_action( 'worknet_authorbox', array( $this, 'social_links' ), 55, 1 );
+		add_action( 'worknet_authorbox', array( $this, 'wrap_end' ), 95, 1 );
 
 	} // hooks()
 
@@ -42,30 +42,30 @@ class Worknet_Authorbox {
 		?><div class="authorbox-avatar"><?php
 
 			/**
-			 * The rosh_authorbox_avatar_size filter.
+			 * The worknet_authorbox_avatar_size filter.
 			 * @var 	int 		The avatar size.
 			 */
-			$size = apply_filters( 'rosh_authorbox_avatar_size', 75 );
+			$size = apply_filters( 'worknet_authorbox_avatar_size', 75 );
 
 			/**
-			 * The rosh_authorbox_default_avatar filter.
+			 * The worknet_authorbox_default_avatar filter.
 			 * @var 	string 		The default avatar image.
 			 */
-			$img = apply_filters( 'rosh_authorbox_default_avatar', '' );
+			$img = apply_filters( 'worknet_authorbox_default_avatar', '' );
 
 			/**
-			 * The rosh_authorbox_avatar_alttext filter.
+			 * The worknet_authorbox_avatar_alttext filter.
 			 * @var 	string 		The alt text for the avatar.
 			 */
-			$alt = apply_filters( 'rosh_authorbox_avatar_alttext', $authordata->nickname );
+			$alt = apply_filters( 'worknet_authorbox_avatar_alttext', $authordata->nickname );
 
 			/**
-			 * The rosh_authorbox_avatar_args filter.
+			 * The worknet_authorbox_avatar_args filter.
 			 * @var [type]
 			 */
 			$avatar_args['class'] 		= 'authorbox-avatar-img';
 			 $avatar_args['extra_attr'] 	= 'itemprop="image"';
-			$args 						= apply_filters( 'rosh_authorbox_avatar_args', $avatar_args );
+			$args 						= apply_filters( 'worknet_authorbox_avatar_args', $avatar_args );
 
 			echo get_avatar( $authordata->ID, $size, $img, $alt, $args );
 
@@ -110,10 +110,10 @@ class Worknet_Authorbox {
 		$socials['instagram'] 	= __( 'Instagram', 'rosh' );
 
 		/**
-		 * The rosh_authorbox_socials filter.
+		 * The worknet_authorbox_socials filter.
 		 * @var 		array 		$socials
 		 */
-		$socials = apply_filters( 'rosh_authorbox_socials', $socials );
+		$socials = apply_filters( 'worknet_authorbox_socials', $socials );
 
 		return $socials;
 
@@ -164,10 +164,10 @@ class Worknet_Authorbox {
 			printf(
 
 				/**
-				 * The rosh_authorbox_moreposts_text filter.
+				 * The worknet_authorbox_moreposts_text filter.
 				 * @var 		string 			The "more posts by" text for the authorbox.
 				 */
-				apply_filters( 'rosh_authorbox_moreposts_text', __( 'More posts by %s', 'rosh' ) ),
+				apply_filters( 'worknet_authorbox_moreposts_text', __( 'More posts by %s', 'rosh' ) ),
 				$authordata->user_nicename
 			);
 
@@ -194,7 +194,7 @@ class Worknet_Authorbox {
 		?><li class="authorbox-social">
 			<a class="authorbox-social-link" href="<?php echo esc_url( $authordata->$key ); ?>" itemprop="url"><?php
 
-				rosh_the_svg( $key );
+				worknet_the_svg( $key );
 
 				echo esc_html( $social, 'rosh' );
 

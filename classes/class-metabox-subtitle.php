@@ -21,7 +21,7 @@ class Worknet_Metabox_Subtitle {
 	 */
 	public function __construct() {
 
-		$nonce 				= 'nonce_rosh_subtitle';
+		$nonce 				= 'nonce_worknet_subtitle';
 		$fields[] 			= array( 'subtitle', 'text', '' );
 		$props['context'] 	= 'top';
 		$props['file'] 		= 'subtitle';

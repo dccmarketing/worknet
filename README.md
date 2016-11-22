@@ -42,7 +42,7 @@ No. Rosh started out as a fork of _s, but was converted to a framework to make i
 
 ### 1.0.2
 * Moves default meta tags to function.
-* Adds rosh_head_content action hook.
+* Adds worknet_head_content action hook.
 * Testing Rosh updating.
 
 ### 1.0.1

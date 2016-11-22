@@ -84,7 +84,7 @@ class Worknet_Utilities {
 	public function background_images() {
 
 		$output = '';
-		$image 	= rosh_get_thumbnail_url( get_the_ID(), 'full' );
+		$image 	= worknet_get_thumbnail_url( get_the_ID(), 'full' );
 
 		if ( ! $image ) {
 
@@ -107,7 +107,7 @@ class Worknet_Utilities {
 	} // background_images()
 
 	/**
-	 * Flush out the transients used in rosh_categorized_blog.
+	 * Flush out the transients used in worknet_categorized_blog.
 	 *
 	 * @exits 		Doing Autosave.
 	 * @hooked 		edit_category
@@ -118,7 +118,7 @@ class Worknet_Utilities {
 		if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) { return; }
 
 		// Like, beat it. Dig?
-		delete_transient( 'rosh_categories' );
+		delete_transient( 'worknet_categories' );
 
 	} // category_transient_flusher()
 

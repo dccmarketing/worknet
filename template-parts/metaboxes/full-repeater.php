@@ -5,7 +5,7 @@
  * @package 		Rosh
  */
 
-wp_nonce_field( PARENT_THEME_SLUG, 'nonce_rosh_full_repeater' );
+wp_nonce_field( PARENT_THEME_SLUG, 'nonce_worknet_full_repeater' );
 
 $atts['name'] 							= 'full-repeater';
 $props['description'] 					= __( 'This repeating field is used for displaying blah blah. The Text Field above is also the name of the field.', 'rosh' );

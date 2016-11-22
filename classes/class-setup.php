@@ -49,7 +49,7 @@ class Worknet_Setup {
 	 */
 	public function content_width() {
 
-		$GLOBALS['content_width'] = apply_filters( 'rosh_content_width', 640 );
+		$GLOBALS['content_width'] = apply_filters( 'worknet_content_width', 640 );
 
 	} // content_width()
 

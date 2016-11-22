@@ -20,9 +20,9 @@ class Worknet_Slushicons {
 	public function hooks() {
 
 		add_filter( 'nav_menu_item_title', 				array( $this, 'add_icons_to_menu' ), 10, 4 );
-		add_filter( 'rosh_menu_item_icon_name', 		array( $this, 'get_icon_info' ), 10, 3 );
-		add_filter( 'rosh_menu_item_text_position', 	array( $this, 'get_text_position' ), 10, 3 );
-		add_filter( 'rosh_change_svg', 					array( $this, 'change_default_svgs' ), 10, 1 );
+		add_filter( 'worknet_menu_item_icon_name', 		array( $this, 'get_icon_info' ), 10, 3 );
+		add_filter( 'worknet_menu_item_text_position', 	array( $this, 'get_text_position' ), 10, 3 );
+		add_filter( 'worknet_change_svg', 					array( $this, 'change_default_svgs' ), 10, 1 );
 
 	} // hooks()
 	
@@ -43,9 +43,9 @@ class Worknet_Slushicons {
 		if ( empty( $args ) || is_array( $args ) ) { return $title; }
 		if ( ! in_array( 'slushicons', $item->classes ) ) { return $title; }
 
-		$icon_name 	= apply_filters( 'rosh_menu_item_icon_name', '', $item, $args );
+		$icon_name 	= apply_filters( 'worknet_menu_item_icon_name', '', $item, $args );
 		$icon 		= $this->get_icon( $icon_name );
-		$textpos 	= apply_filters( 'rosh_menu_item_text_position', '', $item, $args );
+		$textpos 	= apply_filters( 'worknet_menu_item_text_position', '', $item, $args );
 
 		if ( empty( $icon_name ) && empty( $textpos ) ) { return $title; }
 
@@ -131,7 +131,7 @@ class Worknet_Slushicons {
 
 		if ( empty( $icon ) || ! is_array( $icon ) ) { return; }
 
-		$svg = rosh_get_svg( $icon );
+		$svg = worknet_get_svg( $icon );
 
 		if ( is_null( $svg ) ) { return FALSE; }
 
@@ -143,7 +143,7 @@ class Worknet_Slushicons {
 	 * Returns an array of info about the icon.
 	 *
 	 * @exits 		If $classes is empty.
-	 * @hooked 		rosh_menu_item_icon_name 		10
+	 * @hooked 		worknet_menu_item_icon_name 		10
 	 * @param 		string 		$icon 					The current icon name.
 	 * @param 		object 		$item					The menu item object.
 	 * @param 		array 		$args 					The menu arguments.
@@ -189,7 +189,7 @@ class Worknet_Slushicons {
 	 * Returns the text position from the menu item class.
 	 *
 	 * @exits 		If $classes is empty.
-	 * @hooked 		rosh_menu_item_text_position 		10
+	 * @hooked 		worknet_menu_item_text_position 		10
 	 * @param 		string 		$position 					The current text position.
 	 * @param 		object 		$item						The menu item object.
 	 * @param 		array 		$args 						The menu arguments.

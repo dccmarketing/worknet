@@ -35,7 +35,7 @@ class Worknet_Metabox_Demo {
 		$fields[] 			= array( 'field-text', 'text', '' );
 		$fields[] 			= array( 'field-textarea', 'textarea', '' );
 		$fields[] 			= array( 'field-time', 'time', '' );
-		$nonce 				= 'nonce_rosh_demo';
+		$nonce 				= 'nonce_worknet_demo';
 		$props['name'] 		= __( 'Demo', 'rosh' );
 		$props['id'] 		= 'demo';
 

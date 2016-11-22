@@ -13,7 +13,7 @@
  * @param 		string 		$file 		The file name to check for.
  * @return 		mixed 					File path or FALSE
  */
-function rosh_check_for_svg_file( $file ) {
+function worknet_check_for_svg_file( $file ) {
 	
 	if ( empty( $file ) ) { return FALSE; }
 	
@@ -23,9 +23,9 @@ function rosh_check_for_svg_file( $file ) {
 	$paths[] 	= get_stylesheet_directory() . '/assets/svgs/theme';
 	
 	/**
-	 * The rosh_svg_paths filter.
+	 * The worknet_svg_paths filter.
 	 */
-	$paths = apply_filters( 'rosh_svg_paths', $paths );
+	$paths = apply_filters( 'worknet_svg_paths', $paths );
 	
 	if ( empty( $paths ) ) { return FALSE; }
 	
@@ -42,16 +42,16 @@ function rosh_check_for_svg_file( $file ) {
 	
 	return $return;
 	
-} // rosh_check_for_svg_file()
+} // worknet_check_for_svg_file()
 
-if ( ! function_exists( 'rosh_get_customizer_image_info' ) ) :
+if ( ! function_exists( 'worknet_get_customizer_image_info' ) ) :
 	/**
 	 * Returns an array of image info from the image URL
 	 *
 	 * @param 		string 		$name 				The name of the customizer image field
 	 * @return 		array 							The image info array
 	 */
-	function rosh_get_customizer_image_info( $name ) {
+	function worknet_get_customizer_image_info( $name ) {
 
 		if ( empty( $name ) ) { return FALSE; }
 
@@ -59,7 +59,7 @@ if ( ! function_exists( 'rosh_get_customizer_image_info' ) ) :
 
 		if ( empty( $image_url ) ) { return FALSE; }
 
-		$id = rosh_get_image_id( $image_url );
+		$id = worknet_get_image_id( $image_url );
 
 		if ( empty( $id ) ) { return FALSE; }
 
@@ -67,17 +67,17 @@ if ( ! function_exists( 'rosh_get_customizer_image_info' ) ) :
 
 		return $info;
 
-	} // rosh_get_customizer_image_info()
+	} // worknet_get_customizer_image_info()
 endif;
 
-if ( ! function_exists( 'rosh_get_featured_images' ) ) :
+if ( ! function_exists( 'worknet_get_featured_images' ) ) :
 	/**
 	 * Returns an array of the featured image details
 	 *
 	 * @param 		int 	$postID 		The post ID
 	 * @return 		array 					Array of info about the featured image
 	 */
-	function rosh_get_featured_images( $postID ) {
+	function worknet_get_featured_images( $postID ) {
 
 		if ( empty( $postID ) ) { return FALSE; }
 
@@ -87,10 +87,10 @@ if ( ! function_exists( 'rosh_get_featured_images' ) ) :
 
 		return wp_prepare_attachment_for_js( $imageID );
 
-	} // rosh_get_featured_images()
+	} // worknet_get_featured_images()
 endif;
 
-if ( ! function_exists( 'rosh_get_image_id' ) ) :
+if ( ! function_exists( 'worknet_get_image_id' ) ) :
 	/**
 	 * Returns the attachment ID from the file URL
 	 *
@@ -98,7 +98,7 @@ if ( ! function_exists( 'rosh_get_image_id' ) ) :
 	 * @param 		string 		$image_url 			The URL of the image
 	 * @return 		int 							The image ID
 	 */
-	function rosh_get_image_id( $image_url ) {
+	function worknet_get_image_id( $image_url ) {
 
 		if ( empty( $image_url ) ) { return FALSE; }
 
@@ -112,32 +112,32 @@ if ( ! function_exists( 'rosh_get_image_id' ) ) :
 
 		return $attachment[0];
 
-	} // rosh_get_image_id()
+	} // worknet_get_image_id()
 endif;
 
-if ( ! function_exists( 'rosh_get_svg' ) ) :
+if ( ! function_exists( 'worknet_get_svg' ) ) :
 	/**
 	 * Returns the requested SVG
 	 *
 	 * @param 		string 		$svg 		The name of the icon to return
 	 * @return 		mixed 					The SVG code
 	 */
-	function rosh_get_svg( $svg ) {
+	function worknet_get_svg( $svg ) {
 
 		if ( empty( $svg ) ) { return; }
 		
 		$return 	= '';
-		$file 		= apply_filters( 'rosh_change_svg', $svg );
-		$filecheck 	= rosh_check_for_svg_file( $file );
+		$file 		= apply_filters( 'worknet_change_svg', $svg );
+		$filecheck 	= worknet_check_for_svg_file( $file );
 
 		if ( empty( $filecheck ) ) { return FALSE; }
 		
 		return file_get_contents( $filecheck ); 
 
-	} // rosh_get_svg()
+	} // worknet_get_svg()
 endif;
 
-if ( ! function_exists( 'rosh_get_thumbnail_url' ) ) :
+if ( ! function_exists( 'worknet_get_thumbnail_url' ) ) :
 	/**
 	 * Returns the URL of the featured image
 	 *
@@ -145,7 +145,7 @@ if ( ! function_exists( 'rosh_get_thumbnail_url' ) ) :
 	 * @param 		string 		$size 			The image size to return
 	 * @return 		string | bool 				The URL of the featured image, otherwise FALSE
 	 */
-	function rosh_get_thumbnail_url( $postID, $size = 'thumbnail' ) {
+	function worknet_get_thumbnail_url( $postID, $size = 'thumbnail' ) {
 
 		if ( empty( $postID ) ) { return FALSE; }
 
@@ -159,22 +159,22 @@ if ( ! function_exists( 'rosh_get_thumbnail_url' ) ) :
 
 		return $thumb_array[0];
 
-	} // rosh_get_thumbnail_url()
+	} // worknet_get_thumbnail_url()
 endif;
 
-if ( ! function_exists( 'rosh_get_video_thumb' ) ) :
+if ( ! function_exists( 'worknet_get_video_thumb' ) ) :
 	/**
 	 * Return the thumbnail src for Youtube videos
 	 *
 	 * @param 		string 		$video_url 			The YouTube video URL
 	 * @return 		string 							The video thumbnail URL
 	 */
-	function rosh_get_video_thumb( $embed_code ) {
+	function worknet_get_video_thumb( $embed_code ) {
 
 		$return = '';
 
-		$service = rosh_get_video_service( $embed_code );
-		$videoID = rosh_get_video_id( $service, $embed_code );
+		$service = worknet_get_video_service( $embed_code );
+		$videoID = worknet_get_video_id( $service, $embed_code );
 
 		if ( FALSE !== strpos( $embed_code, 'youtu' ) ) {
 
@@ -216,18 +216,18 @@ if ( ! function_exists( 'rosh_get_video_thumb' ) ) :
 
 			}
 
-			$thumb 	= rosh_get_vimeo_thumb( $video_id[1] );
+			$thumb 	= worknet_get_vimeo_thumb( $video_id[1] );
 			$return = $thumb[0]['thumbnail_medium'];
 
 		}
 
 		return $return;
 
-	} // rosh_get_video_thumb()
+	} // worknet_get_video_thumb()
 endif;
 
-if ( ! function_exists( 'rosh_get_video_service' ) ) :
-	function rosh_get_video_service( $string ) {
+if ( ! function_exists( 'worknet_get_video_service' ) ) :
+	function worknet_get_video_service( $string ) {
 
 		if ( empty( $string ) ) { return FALSE; }
 
@@ -249,10 +249,10 @@ if ( ! function_exists( 'rosh_get_video_service' ) ) :
 
 		return $service;
 
-	} // rosh_get_video_service()
+	} // worknet_get_video_service()
 endif;
 
-if ( ! function_exists( 'rosh_get_video_id' ) ) :
+if ( ! function_exists( 'worknet_get_video_id' ) ) :
 	/**
 	 * Returns the video ID
 	 *
@@ -260,7 +260,7 @@ if ( ! function_exists( 'rosh_get_video_id' ) ) :
 	 * @param 		string 		$service 		Name of the service
 	 * @return 		string 						The video ID
 	 */
-	function rosh_get_video_id( $service, $string ) {
+	function worknet_get_video_id( $service, $string ) {
 
 		if ( empty( $service ) ) { return; }
 		if ( empty( $string ) ) { return; }
@@ -283,14 +283,14 @@ if ( ! function_exists( 'rosh_get_video_id' ) ) :
 	} // get_video_id()
 endif;
 
-if ( ! function_exists( 'rosh_get_vimeo_thumb' ) ) :
+if ( ! function_exists( 'worknet_get_vimeo_thumb' ) ) :
 	/**
 	 * Return the thumbnail src for Vimeo videos
 	 *
 	 * @param 		string 		$video_id 			The video ID.
 	 * @return 		url 							The URL for the video thumbnail.
 	 */
-	function rosh_get_vimeo_thumb( $videoid ) {
+	function worknet_get_vimeo_thumb( $videoid ) {
 
 		$url 			= "http://vimeo.com/api/v2/video/" . $videoid . ".php";
 		$cache_id 		= 'vimeocache::' . md5( $url );
@@ -321,19 +321,19 @@ if ( ! function_exists( 'rosh_get_vimeo_thumb' ) ) :
 
 		return $finaldata;
 
-	} // rosh_get_vimeo_thumb()
+	} // worknet_get_vimeo_thumb()
 endif;
 
-if ( ! function_exists( 'rosh_the_svg' ) ) :
+if ( ! function_exists( 'worknet_the_svg' ) ) :
 	/**
 	 * Echos the requested SVG
 	 *
 	 * @param 		string 		$svg 		The name of the icon to return
 	 * @return 		mixed 					The SVG code
 	 */
-	function rosh_the_svg( $svg ) {
+	function worknet_the_svg( $svg ) {
 
-		echo rosh_get_svg( $svg );
+		echo worknet_get_svg( $svg );
 
-	} // rosh_the_svg()
+	} // worknet_the_svg()
 endif;

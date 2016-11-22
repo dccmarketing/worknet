@@ -78,7 +78,7 @@ class Worknet_Critical {
 				
 		foreach ( $this->stylesheets as $name => $stylesheet ) {
 			
-			$newname = rosh_camelcase( $name, '-' );
+			$newname = worknet_camelcase( $name, '-' );
 			
 			echo 'var ' . $newname . ' = loadCSS(\'' . $stylesheet . '\');';
 			
@@ -129,9 +129,9 @@ class Worknet_Critical {
 		$this->stylesheets['rosh-style'] = get_stylesheet_uri();
 		
 		/**
-		 * The rosh_async_stylesheets filter.
+		 * The worknet_async_stylesheets filter.
 		 */
-		$this->stylesheets = apply_filters( 'rosh_async_stylesheets', $this->stylesheets );
+		$this->stylesheets = apply_filters( 'worknet_async_stylesheets', $this->stylesheets );
 		
 	} // set_stylesheets()
 	
@@ -150,9 +150,9 @@ class Worknet_Critical {
 		$this->templates[] = 'single';
 		
 		/**
-		 * The rosh_critical_css_templates filter.
+		 * The worknet_critical_css_templates filter.
 		 */
-		$this->templates = apply_filters( 'rosh_critical_css_templates', $this->templates );
+		$this->templates = apply_filters( 'worknet_critical_css_templates', $this->templates );
 		
 	} // set_templates()
 	

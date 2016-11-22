@@ -35,7 +35,7 @@ class Worknet_Automattic {
 
 		add_theme_support( 'infinite-scroll', array(
 			'container' => 'main',
-			'render'    => 'rosh_infinite_scroll_render',
+			'render'    => 'worknet_infinite_scroll_render',
 			'footer'    => 'page',
 		) );
 
@@ -70,7 +70,7 @@ class Worknet_Automattic {
 /**
  * Custom render function for Infinite Scroll.
  */
-function rosh_infinite_scroll_render() {
+function worknet_infinite_scroll_render() {
 
 	while ( have_posts() ) {
 
@@ -88,4 +88,4 @@ function rosh_infinite_scroll_render() {
 
 	}
 
-} // rosh_infinite_scroll_render()
+} // worknet_infinite_scroll_render()

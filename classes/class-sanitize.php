@@ -45,7 +45,7 @@ class Worknet_Sanitize {
 		/**
 		 * Add additional santization before the default sanitization
 		 */
-		do_action( 'rosh_pre_sanitize', $sanitized );
+		do_action( 'worknet_pre_sanitize', $sanitized );
 
 		switch ( $type ) {
 
@@ -80,7 +80,7 @@ class Worknet_Sanitize {
 		/**
 		 * Add additional santization after the default .
 		 */
-		do_action( 'rosh_post_sanitize', $sanitized );
+		do_action( 'worknet_post_sanitize', $sanitized );
 
 		return $sanitized;
 

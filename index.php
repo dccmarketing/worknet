@@ -12,29 +12,29 @@ get_header();
 ?><div id="primary" class="content-area content-sidebar"><?php
 
 	/**
-	 * The rosh_main_before action hook.
+	 * The worknet_main_before action hook.
 	 */
-	do_action( 'rosh_main_before' );
+	do_action( 'worknet_main_before' );
 
 	?><main id="main" role="main"><?php
 
 	if ( have_posts() ) :
 
 		/**
-		 * The rosh_while_before action hook
+		 * The worknet_while_before action hook
 		 *
 		 * @hooked 		title_archive
 		 * @hooked 		title_single_post
 		 */
-		do_action( 'rosh_while_before' );
+		do_action( 'worknet_while_before' );
 
 		/* Start the Loop */
 		while ( have_posts() ) : the_post();
 
 			/**
-			 * The rosh_entry_before action hook
+			 * The worknet_entry_before action hook
 			 */
-			do_action( 'rosh_entry_before' );
+			do_action( 'worknet_entry_before' );
 			
 			if ( is_search() ) {
 				
@@ -58,47 +58,47 @@ get_header();
 			get_template_part( 'template-parts/content', $part );
 
 			/**
-			 * The rosh_entry_after action hook
+			 * The worknet_entry_after action hook
 			 *
 			 * @hooked 		comments 		10
 			 */
-			do_action( 'rosh_entry_after' );
+			do_action( 'worknet_entry_after' );
 
 		endwhile;
 
 		/**
-		 * The rosh_while_after action hook
+		 * The worknet_while_after action hook
 		 *
 		 * @hooked 		posts_nav
 		 */
-		do_action( 'rosh_while_after' );
+		do_action( 'worknet_while_after' );
 
 	else :
 
 		/**
-		 * The rosh_entry_before action hook
+		 * The worknet_entry_before action hook
 		 */
-		do_action( 'rosh_entry_before' );
+		do_action( 'worknet_entry_before' );
 
 		get_template_part( 'template-parts/content', 'none' );
 
 		/**
-		 * The rosh_entry_after action hook
+		 * The worknet_entry_after action hook
 		 *
 		 * @hooked 		comments 		10
 		 */
-		do_action( 'rosh_entry_after' );
+		do_action( 'worknet_entry_after' );
 
 	endif;
 
 	?></main><!-- #main --><?php
 
 	/**
-	 * The rosh_main_after action hook.
+	 * The worknet_main_after action hook.
 	 *
 	 * @hooked 		sidebar 		10
 	 */
-	do_action( 'rosh_main_after' );
+	do_action( 'worknet_main_after' );
 
 ?></div><!-- #primary --><?php
 

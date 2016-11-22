@@ -796,7 +796,7 @@ class Worknet_Field {
 
 		} elseif ( 'select-slider' === $this->props['type'] ) {
 
-			$sliders 	= rosh_get_posts( 'soliloquy', $this->props['query'], 'select-slider' );
+			$sliders 	= worknet_get_posts( 'soliloquy', $this->props['query'], 'select-slider' );
 
 			if ( empty( $sliders->posts ) ) { return; }
 

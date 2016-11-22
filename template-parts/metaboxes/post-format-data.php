@@ -5,7 +5,7 @@
  * @package Rosh
  */
 
-wp_nonce_field( PARENT_THEME_SLUG, 'nonce_rosh_post_format' );
+wp_nonce_field( PARENT_THEME_SLUG, 'nonce_worknet_post_format' );
 
 $format = get_post_format();
 

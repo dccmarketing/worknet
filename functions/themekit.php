@@ -14,7 +14,7 @@
  * @param 		string 		$separator 		The separato between words.
  * @return 		string 						camelCased word.
  */
-function rosh_camelcase( $word, $separator ) {
+function worknet_camelcase( $word, $separator ) {
 	
 	if ( ! strpos( $word, $separator ) ) { return $word; }
 	
@@ -24,9 +24,9 @@ function rosh_camelcase( $word, $separator ) {
 
 	return $replaced;
 	
-} // rosh_camelcase()
+} // worknet_camelcase()
 
-if ( ! function_exists( 'rosh_categorized_blog' ) ) :
+if ( ! function_exists( 'worknet_categorized_blog' ) ) :
 	/**
 	 * Returns true if a blog has more than 1 category.
 	 *
@@ -36,9 +36,9 @@ if ( ! function_exists( 'rosh_categorized_blog' ) ) :
 	 *
 	 * @return 		bool 			TRUE if blog has more than one category, otherwise FALSE.
 	 */
-	function rosh_categorized_blog() {
+	function worknet_categorized_blog() {
 
-		$cats_count = get_transient( 'rosh_categories' );
+		$cats_count = get_transient( 'worknet_categories' );
 
 		if ( false === ( $cats_count ) ) {
 
@@ -50,7 +50,7 @@ if ( ! function_exists( 'rosh_categorized_blog' ) ) :
 
 			$cats_count = count( $all_the_cats );
 
-			set_transient( 'rosh_categories', $cats_count );
+			set_transient( 'worknet_categories', $cats_count );
 
 		}
 
@@ -62,10 +62,10 @@ if ( ! function_exists( 'rosh_categorized_blog' ) ) :
 
 		return false;
 
-	} // rosh_categorized_blog()
+	} // worknet_categorized_blog()
 endif;
 
-if ( ! function_exists( 'rosh_get_attachment_by_name' ) ) :
+if ( ! function_exists( 'worknet_get_attachment_by_name' ) ) :
 	/**
 	 * Returns an attachment by the filename
 	 *
@@ -73,7 +73,7 @@ if ( ! function_exists( 'rosh_get_attachment_by_name' ) ) :
 	 * @param 		string 			$post_name 				The post name
 	 * @return 		object 									The attachment post object
 	 */
-	function rosh_get_attachment_by_name( $post_name ) {
+	function worknet_get_attachment_by_name( $post_name ) {
 
 		if ( empty( $post_name ) ) { return 'Post name is empty'; }
 
@@ -95,17 +95,17 @@ if ( ! function_exists( 'rosh_get_attachment_by_name' ) ) :
 
 		return FALSE;
 
-	} // rosh_get_attachment_by_name()
+	} // worknet_get_attachment_by_name()
 endif;
 
-if ( ! function_exists( 'rosh_get_max' ) ) :
+if ( ! function_exists( 'worknet_get_max' ) ) :
 	/**
 	 * Returns the count of the largest arrays
 	 *
 	 * @param 		array 		$array 		An array of arrays to count
 	 * @return 		int 					The count of the largest array
 	 */
-	function rosh_get_max( $array ) {
+	function worknet_get_max( $array ) {
 
 		if ( empty( $array ) ) { return '$array is empty!'; }
 
@@ -125,7 +125,7 @@ if ( ! function_exists( 'rosh_get_max' ) ) :
 endif;
 
 
-if ( ! function_exists( 'rosh_get_page_id_by_slug' ) ) :
+if ( ! function_exists( 'worknet_get_page_id_by_slug' ) ) :
 	/**
 	 * Returns the page ID by the page slug and/or post type.
 	 *
@@ -136,7 +136,7 @@ if ( ! function_exists( 'rosh_get_page_id_by_slug' ) ) :
 	 * @param 		string 		$post_type 		The post type. Default is 'page'.
 	 * @return 		int|bool 					The page ID, otherwise FALSE.
 	 */
-	function rosh_get_page_id_by_slug( $slug, $post_type = 'page' ) {
+	function worknet_get_page_id_by_slug( $slug, $post_type = 'page' ) {
 
 		if ( empty( $slug ) || ! is_string( $slug ) ) { return FALSE; }
 
@@ -146,10 +146,10 @@ if ( ! function_exists( 'rosh_get_page_id_by_slug' ) ) :
 
 		return $page_obj->ID;
 
-	} // rosh_get_page_id_by_slug()
+	} // worknet_get_page_id_by_slug()
 endif;
 
-if ( ! function_exists( 'rosh_get_posts' ) ) :
+if ( ! function_exists( 'worknet_get_posts' ) ) :
 	/**
 	 * Returns a post object of the requested post type
 	 *
@@ -158,7 +158,7 @@ if ( ! function_exists( 'rosh_get_posts' ) ) :
 	 * @param 		array 		$params 		Optional parameters
 	 * @return 		object 		A post object
 	 */
-	function rosh_get_posts( $post, $params = array(), $cache = '' ) {
+	function worknet_get_posts( $post, $params = array(), $cache = '' ) {
 
 		if ( empty( $post ) ) { return -1; }
 
@@ -198,16 +198,16 @@ if ( ! function_exists( 'rosh_get_posts' ) ) :
 
 		return $return;
 
-	} // rosh_get_posts()
+	} // worknet_get_posts()
 endif;
 
-if ( ! function_exists( 'rosh_get_posts_page' ) ) :
+if ( ! function_exists( 'worknet_get_posts_page' ) ) :
 	/**
 	 * Returns the URL for the posts page
 	 *
 	 * @return 		string 						The URL for the posts page
 	 */
-	function rosh_get_posts_page() {
+	function worknet_get_posts_page() {
 
 		if ( get_option( 'show_on_front' ) == 'page' ) {
 
@@ -219,10 +219,10 @@ if ( ! function_exists( 'rosh_get_posts_page' ) ) :
 
 		}
 
-	} // rosh_get_posts_page()
+	} // worknet_get_posts_page()
 endif;
 
-if ( ! function_exists( 'rosh_get_state_abbreviation' ) ) :
+if ( ! function_exists( 'worknet_get_state_abbreviation' ) ) :
 	/**
 	 * Returns an array of state abbreviations or single state abbreviation.
 	 *
@@ -230,7 +230,7 @@ if ( ! function_exists( 'rosh_get_state_abbreviation' ) ) :
 	 * @return 		string/array 		$states 		An array of state abbreviations
 	 *                                    					or the abbreviation of a single state.
 	 */
-	function rosh_get_state_abbreviation( $state ) {
+	function worknet_get_state_abbreviation( $state ) {
 
 		$states 					= array();
 		$states['Alabama'] 			= 'AL';
@@ -297,10 +297,10 @@ if ( ! function_exists( 'rosh_get_state_abbreviation' ) ) :
 
 		return $states[$state];
 
-	} // rosh_get_state_abbreviation()
+	} // worknet_get_state_abbreviation()
 endif;
 
-if ( ! function_exists( 'rosh_get_state_name' ) ) :
+if ( ! function_exists( 'worknet_get_state_name' ) ) :
 	/**
 	 * Returns the abbreviation for a state or an array of states.
 	 *
@@ -308,7 +308,7 @@ if ( ! function_exists( 'rosh_get_state_name' ) ) :
 	 * @return 		string|srray 		$states 		Either the name of a state
 	 *                                    					or an array of state names.
 	 */
-	function rosh_get_state_name( $state ) {
+	function worknet_get_state_name( $state ) {
 
 		$states 		= array();
 		$states['AL'] 	= 'Alabama';
@@ -375,10 +375,10 @@ if ( ! function_exists( 'rosh_get_state_name' ) ) :
 
 		return $states[$state];
 
-	} // rosh_get_state_name()
+	} // worknet_get_state_name()
 endif;
 
-if ( ! function_exists( 'rosh_is_tree' ) ) :
+if ( ! function_exists( 'worknet_is_tree' ) ) :
 	/**
 	 * Determines if a page is within a tree of pages or not.
 	 *
@@ -386,7 +386,7 @@ if ( ! function_exists( 'rosh_is_tree' ) ) :
 	 * @param 		int 		$pageID 		The page ID.
 	 * @return 		bool 						TRUE if in a tree, FALSE if not.
 	 */
-	function rosh_is_tree( $pageID ) {
+	function worknet_is_tree( $pageID ) {
 
 		if ( empty( $pageID ) ) { return; }
 
@@ -419,10 +419,10 @@ if ( ! function_exists( 'rosh_is_tree' ) ) :
 
 		return FALSE;
 
-	} // rosh_is_tree()
+	} // worknet_is_tree()
 endif;
 
-if ( ! function_exists( 'rosh_make_map_link' ) ) :
+if ( ! function_exists( 'worknet_make_map_link' ) ) :
 	/**
 	 * Returns a Google Map link from an address
 	 *
@@ -430,7 +430,7 @@ if ( ! function_exists( 'rosh_make_map_link' ) ) :
 	 * @param 		string 		$address 		An address
 	 * @return 		string 						URL for Google Maps
 	 */
-	function rosh_make_map_link( $address ) {
+	function worknet_make_map_link( $address ) {
 
 		if( empty( $address ) ) { return FALSE; }
 
@@ -441,10 +441,10 @@ if ( ! function_exists( 'rosh_make_map_link' ) ) :
 
 		return $return;
 
-	} // rosh_make_map_link()
+	} // worknet_make_map_link()
 endif;
 
-if ( ! function_exists( 'rosh_make_phone_link' ) ) :
+if ( ! function_exists( 'worknet_make_phone_link' ) ) :
 	/**
 	 * Converts a phone number into a tel link
 	 *
@@ -452,7 +452,7 @@ if ( ! function_exists( 'rosh_make_phone_link' ) ) :
 	 * @param 		string 		$number 			A phone number
 	 * @return 		mixed 							Formatted HTML telephone link
 	 */
-	function rosh_make_phone_link( $number ) {
+	function worknet_make_phone_link( $number ) {
 
 		if ( empty( $number ) ) { return FALSE; }
 
@@ -470,10 +470,10 @@ if ( ! function_exists( 'rosh_make_phone_link' ) ) :
 
 		return $return;
 
-	} // rosh_make_phone_link()
+	} // worknet_make_phone_link()
 endif;
 
-if ( ! function_exists( 'rosh_shorten_text' ) ) :
+if ( ! function_exists( 'worknet_shorten_text' ) ) :
 	/**
 	 * Reduce the length of a string by character count
 	 *
@@ -483,7 +483,7 @@ if ( ! function_exists( 'rosh_shorten_text' ) ) :
 	 * @param 		string 		$after 		Text for after the limit
 	 * @return 		string 					The possibly reduced string
 	 */
-	function rosh_shorten_text( $text, $limit = 100, $after = '...' ) {
+	function worknet_shorten_text( $text, $limit = 100, $after = '...' ) {
 
 		if ( empty( $text ) ) { return; }
 
@@ -498,7 +498,7 @@ if ( ! function_exists( 'rosh_shorten_text' ) ) :
 
 		return $text;
 
-	} // rosh_shorten_text()
+	} // worknet_shorten_text()
 endif;
 
 /**

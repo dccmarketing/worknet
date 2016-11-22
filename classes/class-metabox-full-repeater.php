@@ -21,7 +21,7 @@ class Worknet_Metabox_Full_Repeater {
 	 */
 	public function __construct() {
 
-		$nonce 				= 'nonce_rosh_full_repeater';
+		$nonce 				= 'nonce_worknet_full_repeater';
 		$subfields[] 		= array( 'full-peat-checkbox', 'checkbox', '' );
 		$subfields[] 		= array( 'full-peat-color', 'color', '' );
 		$subfields[] 		= array( 'full-peat-date', 'date', '' );

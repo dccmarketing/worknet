@@ -10,58 +10,58 @@
  */
 
 			/**
-			 * The rosh_content_bottom action hook
+			 * The worknet_content_bottom action hook
 			 */
-			do_action( 'rosh_content_bottom' );
+			do_action( 'worknet_content_bottom' );
 
 		?></div><!-- #content --><?php
 
 		/**
-		 * The rosh_content_after action hook
+		 * The worknet_content_after action hook
 		 */
-		do_action( 'rosh_content_after' );
+		do_action( 'worknet_content_after' );
 
 		/**
-		 * The rosh_footer_before action hook
+		 * The worknet_footer_before action hook
 		 */
-		do_action( 'rosh_footer_before' );
+		do_action( 'worknet_footer_before' );
 
 		?><footer class="site-footer" id="colophon" role="contentinfo"><?php
 
 			/**
-			 * The rosh_footer_top action hook
+			 * The worknet_footer_top action hook
 			 *
 			 * @hooked 		footer_wrap_begin
 			 */
-			do_action( 'rosh_footer_top' );
+			do_action( 'worknet_footer_top' );
 
 			/**
-			 * The rosh_footer_content action hook
+			 * The worknet_footer_content action hook
 			 *
 			 * @hooked 		footer_content 			20
 			 */
-			do_action( 'rosh_footer_content' );
+			do_action( 'worknet_footer_content' );
 
 			/**
-			 * The rosh_footer_bottom action hook
+			 * The worknet_footer_bottom action hook
 			 *
 			 * @hooked 		footer_wrap_end
 			 */
-			do_action( 'rosh_footer_bottom' );
+			do_action( 'worknet_footer_bottom' );
 
 		?></footer><!-- #colophon --><?php
 
 	/**
-	 * The rosh_footer_after action hook
+	 * The worknet_footer_after action hook
 	 */
-	do_action( 'rosh_footer_after' );
+	do_action( 'worknet_footer_after' );
 
 	wp_footer();
 
 	/**
-	 * The rosh_body_bottom action hook
+	 * The worknet_body_bottom action hook
 	 */
-	do_action( 'rosh_body_bottom' );
+	do_action( 'worknet_body_bottom' );
 
 	?></body>
 </html>

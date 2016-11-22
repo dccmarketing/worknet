@@ -5,7 +5,7 @@
  * @package 		Rosh
  */
 
-wp_nonce_field( PARENT_THEME_SLUG, 'nonce_rosh_subtitle' );
+wp_nonce_field( PARENT_THEME_SLUG, 'nonce_worknet_subtitle' );
 
 $atts['id'] 			= 'subtitle';
 $atts['name'] 			= 'subtitle';

@@ -19,68 +19,68 @@ class Worknet_Themehooks {
 	 */
 	public function hooks() {
 
-		add_action( 'rosh_head_content', 			array( $this, 'head_content' ), 10 );
+		add_action( 'worknet_head_content', 			array( $this, 'head_content' ), 10 );
 
-		add_action( 'rosh_header_top', 				array( $this, 'header_wrap_start' ), 10 );
-		add_action( 'rosh_header_top', 				array( $this, 'site_branding_begin' ), 15 );
+		add_action( 'worknet_header_top', 				array( $this, 'header_wrap_start' ), 10 );
+		add_action( 'worknet_header_top', 				array( $this, 'site_branding_begin' ), 15 );
 
-		add_action( 'rosh_header_content', 			array( $this, 'title_site' ), 10 );
-		add_action( 'rosh_header_content', 			array( $this, 'site_description' ), 15 );
+		add_action( 'worknet_header_content', 			array( $this, 'title_site' ), 10 );
+		add_action( 'worknet_header_content', 			array( $this, 'site_description' ), 15 );
 
-		add_action( 'rosh_header_bottom', 			array( $this, 'site_branding_end' ), 85 );
-		add_action( 'rosh_header_bottom', 			array( $this, 'header_wrap_end' ), 90 );
-		add_action( 'rosh_header_bottom', 			array( $this, 'menu_primary' ), 95 );
+		add_action( 'worknet_header_bottom', 			array( $this, 'site_branding_end' ), 85 );
+		add_action( 'worknet_header_bottom', 			array( $this, 'header_wrap_end' ), 90 );
+		add_action( 'worknet_header_bottom', 			array( $this, 'menu_primary' ), 95 );
 
-		add_action( 'rosh_body_top', 				array( $this, 'analytics_code' ), 10 );
-		add_action( 'rosh_body_top', 				array( $this, 'skip_link' ), 20 );
+		add_action( 'worknet_body_top', 				array( $this, 'analytics_code' ), 10 );
+		add_action( 'worknet_body_top', 				array( $this, 'skip_link' ), 20 );
 
-		add_action( 'rosh_main_before', 			array( $this, 'sidebar_content' ), 10 );
+		add_action( 'worknet_main_before', 			array( $this, 'sidebar_content' ), 10 );
 
-		add_action( 'rosh_while_before', 			array( $this, 'title_archive' ) );
-		add_action( 'rosh_while_before', 			array( $this, 'title_single_post' ) );
-		add_action( 'rosh_while_before', 			array( $this, 'title_search' ), 10 );
+		add_action( 'worknet_while_before', 			array( $this, 'title_archive' ) );
+		add_action( 'worknet_while_before', 			array( $this, 'title_single_post' ) );
+		add_action( 'worknet_while_before', 			array( $this, 'title_search' ), 10 );
 
-		add_action( 'rosh_content_top', 			array( $this, 'breadcrumbs' ) );
+		add_action( 'worknet_content_top', 			array( $this, 'breadcrumbs' ) );
 
-		add_action( 'rosh_entry_header_content', 	array( $this, 'title_entry' ), 10 );
-		add_action( 'rosh_entry_header_content', 	array( $this, 'title_page' ), 10 );
-		add_action( 'rosh_entry_header_content', 	array( $this, 'posted_on' ), 20 );
+		add_action( 'worknet_entry_header_content', 	array( $this, 'title_entry' ), 10 );
+		add_action( 'worknet_entry_header_content', 	array( $this, 'title_page' ), 10 );
+		add_action( 'worknet_entry_header_content', 	array( $this, 'posted_on' ), 20 );
 
-		add_action( 'rosh_entry_footer_content', 	array( $this, 'entry_categories_links' ), 10 );
-		add_action( 'rosh_entry_footer_content', 	array( $this, 'entry_tags_links' ), 15 );
-		add_action( 'rosh_entry_footer_content', 	array( $this, 'entry_comments_links' ), 20 );
-		add_action( 'rosh_entry_footer_content', 	array( $this, 'entry_edit_link' ), 25 );
+		add_action( 'worknet_entry_footer_content', 	array( $this, 'entry_categories_links' ), 10 );
+		add_action( 'worknet_entry_footer_content', 	array( $this, 'entry_tags_links' ), 15 );
+		add_action( 'worknet_entry_footer_content', 	array( $this, 'entry_comments_links' ), 20 );
+		add_action( 'worknet_entry_footer_content', 	array( $this, 'entry_edit_link' ), 25 );
 
-		add_action( 'rosh_entry_after', 			array( $this, 'authorbox' ), 5 );
-		add_action( 'rosh_entry_after', 			array( $this, 'comments' ), 10 );
+		add_action( 'worknet_entry_after', 			array( $this, 'authorbox' ), 5 );
+		add_action( 'worknet_entry_after', 			array( $this, 'comments' ), 10 );
 
-		add_action( 'rosh_while_after', 			array( $this, 'posts_nav' ) );
+		add_action( 'worknet_while_after', 			array( $this, 'posts_nav' ) );
 
-		add_action( 'rosh_main_after', 				array( $this, 'content_sidebar' ), 10 );
+		add_action( 'worknet_main_after', 				array( $this, 'content_sidebar' ), 10 );
 
-		add_action( 'rosh_404_header', 				array( $this, 'title_404' ), 10 );
+		add_action( 'worknet_404_header', 				array( $this, 'title_404' ), 10 );
 
-		add_action( 'rosh_404_before', 				array( $this, 'four_04_message' ), 10 );
+		add_action( 'worknet_404_before', 				array( $this, 'four_04_message' ), 10 );
 
-		add_action( 'rosh_404_content', 			array( $this, 'add_search' ), 10 );
-		add_action( 'rosh_404_content', 			array( $this, 'four_04_posts_widget' ), 15 );
-		add_action( 'rosh_404_content', 			array( $this, 'four_04_categories' ), 20 );
-		add_action( 'rosh_404_content', 			array( $this, 'four_04_archives' ), 25 );
-		add_action( 'rosh_404_content', 			array( $this, 'four_04_tag_cloud' ), 30 );
+		add_action( 'worknet_404_content', 			array( $this, 'add_search' ), 10 );
+		add_action( 'worknet_404_content', 			array( $this, 'four_04_posts_widget' ), 15 );
+		add_action( 'worknet_404_content', 			array( $this, 'four_04_categories' ), 20 );
+		add_action( 'worknet_404_content', 			array( $this, 'four_04_archives' ), 25 );
+		add_action( 'worknet_404_content', 			array( $this, 'four_04_tag_cloud' ), 30 );
 
-		add_action( 'rosh_footer_top', 				array( $this, 'footer_wrap_begin' ) );
+		add_action( 'worknet_footer_top', 				array( $this, 'footer_wrap_begin' ) );
 
-		add_action( 'rosh_footer_content', 			array( $this, 'footer_content' ), 20 );
-		add_action( 'rosh_footer_content', 			array( $this, 'menu_social' ), 20 );
+		add_action( 'worknet_footer_content', 			array( $this, 'footer_content' ), 20 );
+		add_action( 'worknet_footer_content', 			array( $this, 'menu_social' ), 20 );
 
-		add_action( 'rosh_footer_bottom', 			array( $this, 'footer_wrap_end' ) );
+		add_action( 'worknet_footer_bottom', 			array( $this, 'footer_wrap_end' ) );
 
 	} // hooks()
 
 	/**
 	 * Adds a search form
 	 *
-	 * @hooked 		rosh_404_content 		15
+	 * @hooked 		worknet_404_content 		15
 	 * @return 		mixed 		Search form markup
 	 */
 	public function add_search() {
@@ -93,7 +93,7 @@ class Worknet_Themehooks {
 	 * Inserts Google Tag manager code after body tag
 	 *
 	 * @exits 		tag_manager field is empty.
-	 * @hooked 		rosh_body_top 		10
+	 * @hooked 		worknet_body_top 		10
 	 * @return 		mixed 				The inserted Google Tag Manager code
 	 */
 	public function analytics_code() {
@@ -111,14 +111,14 @@ class Worknet_Themehooks {
 	/**
 	 * Adds the authorbox action hook.
 	 *
-	 * @hooked 		rosh_entry_after 		5
+	 * @hooked 		worknet_entry_after 		5
 	 */
 	public function authorbox() {
 
 		global $authordata;
 
 		/**
-		 * The rosh_authorbox action hook.
+		 * The worknet_authorbox action hook.
 		 * See the class-authorbox.php file for hooked functions.
 		 *
 		 * @hooked 		wrap_begin 		5
@@ -130,7 +130,7 @@ class Worknet_Themehooks {
 		 * @hooked 		wrap_end 		95
 		 * @param 		obj 			$authordata 		The current author's DB object.
 		 */
-		do_action( 'rosh_authorbox', $authordata );
+		do_action( 'worknet_authorbox', $authordata );
 
 	} // authorbox()
 
@@ -138,7 +138,7 @@ class Worknet_Themehooks {
 	 * Returns the appropriate breadcrumbs.
 	 *
 	 * @exits 		On the front page.
-	 * @hooked		rosh_wrap_content
+	 * @hooked		worknet_wrap_content
 	 * @return 		mixed 				WooCommerce breadcrumbs, then Yoast breadcrumbs
 	 */
 	public function breadcrumbs() {
@@ -177,7 +177,7 @@ class Worknet_Themehooks {
 	 *
 	 * @exits 		Comments closed.
 	 * @exits 		There are no comments.
-	 * @hooked 		rosh_entry_after 		10
+	 * @hooked 		worknet_entry_after 		10
 	 * @return 		mixed 					The comments markup
 	 */
 	public function comments() {
@@ -191,7 +191,7 @@ class Worknet_Themehooks {
 	/**
 	 * Returns the sidebar markup.
 	 *
-	 * Hooked at rosh_main_after:
+	 * Hooked at worknet_main_after:
 	 *		404.php
 	 * 		archive.php
 	 * 		index.php
@@ -200,7 +200,7 @@ class Worknet_Themehooks {
 	 *  	single.php
 	 *
 	 * @exits 		If its a page.
-	 * @hooked 		rosh_main_after 		10
+	 * @hooked 		worknet_main_after 		10
 	 * @return 		mixed 					The sidebar markup.
 	 */
 	public function content_sidebar() {
@@ -225,7 +225,7 @@ class Worknet_Themehooks {
 
 		/* translators: used between list items, there is a space after the comma */
 		$categories_list = get_the_category_list( esc_html__( ', ', 'rosh' ) );
-		if ( $categories_list && rosh_categorized_blog() ) {
+		if ( $categories_list && worknet_categorized_blog() ) {
 
 			printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'rosh' ) . '</span>', $categories_list );  // WPCS: XSS OK.
 
@@ -298,7 +298,7 @@ class Worknet_Themehooks {
 	/**
 	 * Adds the copyright and credits to the footer content.
 	 *
-	 * @hooked 		rosh_footer_content
+	 * @hooked 		worknet_footer_content
 	 * @return 		mixed 									The footer markup
 	 */
 	public function footer_content() {
@@ -313,7 +313,7 @@ class Worknet_Themehooks {
 	/**
 	 * Adds the opening wrapper tag.
 	 *
-	 * @hooked 		rosh_footer_top
+	 * @hooked 		worknet_footer_top
 	 * @return 		mixed 		The opening wrapper tag
 	 */
 	public function footer_wrap_begin() {
@@ -325,7 +325,7 @@ class Worknet_Themehooks {
 	/**
 	 * Adds the closing wrapper tag.
 	 *
-	 * @hooked 		rosh_footer_bottom
+	 * @hooked 		worknet_footer_bottom
 	 * @return 		mixed 		The closing wrapper tag
 	 */
 	public function footer_wrap_end() {
@@ -338,7 +338,7 @@ class Worknet_Themehooks {
 	 * Adds the  to the 404 page content.
 	 *
 	 * @exits 		Not on 404 page.
-	 * @hooked 		rosh_404_content		25
+	 * @hooked 		worknet_404_content		25
 	 * @return 		mixed 					Markup for the archives
 	 */
 	public function four_04_archives() {
@@ -356,13 +356,13 @@ class Worknet_Themehooks {
 	 * Adds the  to the 404 page content.
 	 *
 	 * @exits 		Not on 404 page.
-	 * @hooked 		rosh_404_content		20
+	 * @hooked 		worknet_404_content		20
 	 * @return 		mixed 					The categories widget
 	 */
 	public function four_04_categories() {
 
 		if ( ! is_404() ) { return; }
-		if ( ! rosh_categorized_blog() ) { return; }
+		if ( ! worknet_categorized_blog() ) { return; }
 
 		?><div class="widget widget_categories">
 			<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'rosh' ); ?></h2>
@@ -385,7 +385,7 @@ class Worknet_Themehooks {
 	 * Adds the Recent Posts widget to the 404 page.
 	 *
 	 * @exits 		Not on 404 page.
-	 * @hooked 		rosh_404_before 		10
+	 * @hooked 		worknet_404_before 		10
 	 * @return 		mixed 					The 404 message markup.
 	 */
 	public function four_04_message() {
@@ -400,7 +400,7 @@ class Worknet_Themehooks {
 	 * Adds the Recent Posts widget to the 404 page.
 	 *
 	 * @exits 		Not on 404 page.
-	 * @hooked 		rosh_404_content 		15
+	 * @hooked 		worknet_404_content 		15
 	 * @return 		mixed 					The Recent Posts widget
 	 */
 	public function four_04_posts_widget() {
@@ -415,7 +415,7 @@ class Worknet_Themehooks {
 	 * Adds the  to the 404 page content.
 	 *
 	 * @exits 		Not on 404 page.
-	 * @hooked 		rosh_404_content		30
+	 * @hooked 		worknet_404_content		30
 	 * @return 		mixed 					The tag cloud widget
 	 */
 	public function four_04_tag_cloud() {
@@ -429,7 +429,7 @@ class Worknet_Themehooks {
 	/**
 	 * Adds default meta tags in the head.
 	 *
-	 * @hooked 		rosh_head_content 			10
+	 * @hooked 		worknet_head_content 			10
 	 * @return 		mixed 						The default meta tags markup.
 	 */
 	public function head_content() {
@@ -444,7 +444,7 @@ class Worknet_Themehooks {
 	/**
 	 * The header wrap markup
 	 *
-	 * @hooked  	rosh_header_bottom 		90
+	 * @hooked  	worknet_header_bottom 		90
 	 * @return 		mixed 					The header wrap markup
 	 */
 	public function header_wrap_end() {
@@ -456,7 +456,7 @@ class Worknet_Themehooks {
 	/**
 	 * The header wrap markup
 	 *
-	 * @hooked 		rosh_header_top 		10
+	 * @hooked 		worknet_header_top 		10
 	 * @return 		mixed 				The header wrap markup
 	 */
 	public function header_wrap_start() {
@@ -468,7 +468,7 @@ class Worknet_Themehooks {
 	/**
 	 * Adds the primary menu
 	 *
-	 * @hooked 		rosh_header_bottom 		95
+	 * @hooked 		worknet_header_bottom 		95
 	 * @return 		mixed 					The primary menu markup
 	 */
 	public function menu_primary() {
@@ -494,7 +494,7 @@ class Worknet_Themehooks {
 	 * Adds the primary menu
 	 *
 	 * @exits 		Menu not active.
-	 * @hooked 		rosh_header_bottom 		65
+	 * @hooked 		worknet_header_bottom 		65
 	 * @return 		mixed 					The social links menu markup
 	 */
 	public function menu_social() {
@@ -559,7 +559,7 @@ class Worknet_Themehooks {
 	 *
 	 * @exits 		Not on posts home.
 	 * @exits 		Not on archive page.
-	 * @hooked 		rosh_while_after
+	 * @hooked 		worknet_while_after
 	 * @return 		mixed 							The posts navigation
 	 */
 	public function posts_nav() {
@@ -574,7 +574,7 @@ class Worknet_Themehooks {
 	 * Returns the sidebar markup.
 	 *
 	 * @exits 		If its not the sidebar-content template.
-	 * @hooked 		rosh_main_before 		10
+	 * @hooked 		worknet_main_before 		10
 	 * @return 		mixed 					The sidebar markup.
 	 */
 	public function sidebar_content() {
@@ -588,7 +588,7 @@ class Worknet_Themehooks {
 	/**
 	 * Adds the starting site branding markup
 	 *
-	 * @hooked 		rosh_header_top				15
+	 * @hooked 		worknet_header_top				15
 	 * @return 		mixed 						HTML markup
 	 */
 	public function site_branding_begin() {
@@ -600,7 +600,7 @@ class Worknet_Themehooks {
 	/**
 	 * Adds the starting site branding markup
 	 *
-	 * @hooked 		rosh_header_bottom			85
+	 * @hooked 		worknet_header_bottom			85
 	 * @return 		mixed 						HTML markup
 	 */
 	public function site_branding_end() {
@@ -612,7 +612,7 @@ class Worknet_Themehooks {
 	/**
 	 * Adds the site description markup
 	 *
-	 * @hooked 		rosh_header_content 		15
+	 * @hooked 		worknet_header_content 		15
 	 * @return 		mixed 								The site description markup
 	 */
 	public function site_description() {
@@ -630,7 +630,7 @@ class Worknet_Themehooks {
 	/**
 	 * Adds the a11y skip link markup
 	 *
-	 * @hooked 		rosh_body_top 		20
+	 * @hooked 		worknet_body_top 		20
 	 * @return 		mixed 				Skip link markup
 	 */
 	public function skip_link() {
@@ -643,7 +643,7 @@ class Worknet_Themehooks {
 	 * Returns the page title
 	 *
 	 * @exits 		If its not the 404 page.
-	 * @hooked 		rosh_404_header 		10
+	 * @hooked 		worknet_404_header 		10
 	 * @return 		mixed 					The 404 page title
 	 */
 	public function title_404() {
@@ -662,7 +662,7 @@ class Worknet_Themehooks {
 	 * Adds the page title to an archive page
 	 *
 	 * @exits 		Not on archive page.
-	 * @hooked 		rosh_while_before
+	 * @hooked 		worknet_while_before
 	 * @return 		mixed 							The archive page title
 	 */
 	public function title_archive() {
@@ -709,7 +709,7 @@ class Worknet_Themehooks {
 	 * @exits 		On the front page.
 	 * @exits 		On posts home.
 	 * @exits 		Not on a page.
-	 * @hooked 		rosh_while_before 		10
+	 * @hooked 		worknet_while_before 		10
 	 * @return 		mixed 							The entry title
 	 */
 	public function title_page() {
@@ -725,7 +725,7 @@ class Worknet_Themehooks {
 	 * The search title markup
 	 *
 	 * @exits 		Not on a search page.
-	 * @hooked 		rosh_while_before
+	 * @hooked 		worknet_while_before
 	 * @return 		mixed 							Search title markup
 	 */
 	public function title_search() {
@@ -746,7 +746,7 @@ class Worknet_Themehooks {
 	 * Adds the single post title to the index
 	 *
 	 * @exits 		On static front page
-	 * @hooked 		rosh_while_before
+	 * @hooked 		worknet_while_before
 	 * @return 		mixed 							The single post title
 	 */
 	public function title_single_post() {
@@ -765,7 +765,7 @@ class Worknet_Themehooks {
 	 *
 	 * @exits 		get_custom_logo doesn't exist
 	 * @exits 		get_custom_logo is empty
-	 * @hooked 		rosh_header_content 		10
+	 * @hooked 		worknet_header_content 		10
 	 * @return 		mixed 								The site title markup
 	 */
 	public function title_site() {

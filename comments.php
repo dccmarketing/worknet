@@ -18,9 +18,9 @@
 if ( post_password_required() ) { return; }
 
 /**
- * The rosh_comments_before action hook
+ * The worknet_comments_before action hook
  */
-do_action( 'rosh_comments_before' );
+do_action( 'worknet_comments_before' );
 
 ?><div id="comments" class="comments-area"><?php
 
@@ -85,6 +85,6 @@ do_action( 'rosh_comments_before' );
 ?></div><!-- #comments --><?php
 
 /**
- * The rosh_comments_after action hook
+ * The worknet_comments_after action hook
  */
-do_action( 'rosh_comments_after' );
+do_action( 'worknet_comments_after' );

@@ -26,9 +26,9 @@ class Worknet_Autoloader {
 		$paths[] 	= $base_path . 'classes/' . $file;
 
 		/**
-		 * rosh-autoloader-paths filter
+		 * worknet_autoloader_paths filter
 		 */
-		$paths = apply_filters( 'rosh_autoloader_paths', $paths );
+		$paths = apply_filters( 'worknet_autoloader_paths', $paths );
 
 		foreach ( $paths as $path ) :
 

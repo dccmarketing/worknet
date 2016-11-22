@@ -5,7 +5,7 @@
  * @package 		Rosh
  */
 
-wp_nonce_field( PARENT_THEME_SLUG, 'nonce_rosh_simple_repeater' );
+wp_nonce_field( PARENT_THEME_SLUG, 'nonce_worknet_simple_repeater' );
 
 $atts['name'] 							= 'simple-repeater';
 $fields[0]['atts']['class'] 			= 'widefat repeater-title';

@@ -21,7 +21,7 @@ class Worknet_Metabox_Simple_Repeater {
 	 */
 	public function __construct() {
 
-		$nonce 				= 'nonce_rosh_simple_repeater';
+		$nonce 				= 'nonce_worknet_simple_repeater';
 		$subfields[] 		= array( 'simple-peat-text', 'text', '' );
 		$fields[] 			= array( 'simple-repeater', 'repeater', $subfields );
 		$props['id'] 		= 'simple-repeater';

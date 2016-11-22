@@ -24,7 +24,7 @@ class Worknet_Metabox_Post_Format {
 		$conditions['cap'] 			= 'edit_post';
 		$conditions['post_type'] 	= 'post';
 		$conditions['support'] 		= 'post-formats';
-		$nonce 						= 'nonce_rosh_post_format';
+		$nonce 						= 'nonce_worknet_post_format';
 		$fields[] 					= array( 'post-audio', 'url', '' );
 		$fields[] 					= array( 'post-image', 'hidden', '' );
 		$fields[] 					= array( 'post-link', 'url', '' );
